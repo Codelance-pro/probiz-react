@@ -127,3 +127,9 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* index.css */
+html, body {
+  margin: 0;
+  padding: 0;
+}
