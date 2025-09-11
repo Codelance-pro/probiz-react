@@ -393,7 +393,7 @@ export function ApplexLanding() {
             </Button>
           </div>
           <div className="text-xs sm:text-sm text-muted-foreground">
-            <p>&copy; 2024 Applex. All rights reserved.</p>
+            <p>&copy; 2023 Probiz. All rights reserved.</p>
           </div>
         </div>
       </footer>
