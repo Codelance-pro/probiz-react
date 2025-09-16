@@ -6,7 +6,8 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About.jsx";
-import NavBar from "./pages/NavBar.jsx";
+// import NavBar from "./pages/NavBar.jsx";
+import AppBar from "./pages/AppBar.jsx"
 
 const queryClient = new QueryClient();
 
@@ -16,7 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner /> */}
       <Router>
-        <NavBar/>
+        {/* <AppBar/> */}
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
