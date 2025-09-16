@@ -13,7 +13,7 @@ const NavBar = () => {
                     <nav className="flex items-center justify-between rounded-2xl px-4 sm:px-6 py-3 bg-card/80 backdrop-blur-sm shadow-lg">
                       <div className="flex items-center space-x-4 sm:space-x-8">
                         {/* <h1 className="text-xl sm:text-2xl font-bold text-foreground">Probiz</h1> */}
-                        <img src={logo} alt="Probiz Logo" className="w-400 h-400sm:w-10 sm:h-10 " />
+                        <img src={logo} alt="Probiz Logo" className=" sm:h-10 " />
         
         
                         {/* Desktop Navigation */}

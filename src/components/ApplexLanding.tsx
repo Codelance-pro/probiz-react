@@ -24,6 +24,8 @@ import heroMockup from "@/assets/mobiles.png";
 import calendarMockup from "@/assets/calendar-mockup.jpg";
 import customerTestimonial from "@/assets/customer-testimonial.jpg";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
+
 
 export function ApplexLanding() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,7 +34,8 @@ export function ApplexLanding() {
     <div className="min-h-screen bg-gradient-bg">
       {/* Header */}
       <div className="bg-gradient-card px-4 sm:px-6 ">
-    
+     
+     
 
         {/* Hero Section */}
         <section className="relative px-4 sm:px-6 py-10 sm:py-16 lg:py-20 overflow-visible bg-[#d9c8fb] rounded-b-2xl">
