@@ -21,84 +21,23 @@ const About = () => {
         <div className="bg-background text-foreground px-4 sm:px-6  ">
             {/* Hero / Breadcrumb */}
 
-            <header className="relative z-50 px-4 sm:px-6 py-4 bg-[#d9c8fb] rounded-t-2xl">
-                <div className="max-w-7xl mx-auto">
-                    <nav className="flex items-center justify-between rounded-2xl px-4 sm:px-6 py-3 bg-card/80 backdrop-blur-sm shadow-lg">
-                        <div className="flex items-center space-x-4 sm:space-x-8">
-                            <img src={logo} alt="Probiz Logo" className="w-20 h-12 sm:w-24 sm:h-12" />
-
-                            {/* Desktop Navigation - Fixed with explicit display classes */}
-                            <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
-                                <a href="#" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
-                                    Home
-                                </a>
-                                <Link to="/about" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
-                                    About
-                                </Link>
-                                <a href="#" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
-                                    Pricing
-                                </a>
-                                <a href="#" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
-                                    Blog
-                                </a>
-                            </div>
-                        </div>
-
-                        {/* Desktop Download Button - Fixed with explicit display classes */}
-                        <Button className="hidden sm:flex sm:bg-foreground sm:text-background hover:bg-foreground/90 rounded-full px-4 lg:px-6 items-center py-2 text-sm lg:text-base">
-                            Book a Demo
-                        </Button>
-
-                        {/* Mobile Menu Button */}
-                        <button
-                            className="flex sm:hidden p-2"
-                            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                        >
-                            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                        </button>
-                    </nav>
-
-                    {/* Mobile Menu */}
-                    {isMobileMenuOpen && (
-                        <div className="block sm:hidden mt-2 rounded-2xl px-4 py-3 bg-card/80 backdrop-blur-sm shadow-lg">
-                            <div className="flex flex-col space-y-3">
-                                <a href="#" className="text-foreground hover:text-foreground/80 transition-colors py-2">
-                                    Home
-                                </a>
-                                <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-                                    About
-                                </Link>
-                                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-                                    Pricing
-                                </a>
-                                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
-                                    Blog
-                                </a>
-                                <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full w-full flex items-center justify-center">
-                                    Book a Demo
-                                </Button>
-                            </div>
-                        </div>
-                    )}
-                </div>
-            </header>
-
+            
             <div className="bg-[#d9c8fb] py-12 px-6 sm:px-12 text-center rounded-b-2xl">
                 <h1 className="text-4xl md:text-5xl mb-4 font-sans">Who Are We?</h1>
 
                 {/* Who Are We */}
-                <section className="section-1 py-16 px-6 sm:px-12 grid sm:grid-cols-2 lg:grid-cols-1 md:grid-cols-2 gap-4 sm px-4 sm:px-6 py-10 sm:py-16 lg:py-20 rounded-b-2xl">
+                <section className="section-1 py-16 px-6 sm:px-12 grid sm:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-4 sm px-4 sm:px-6 py-10 sm:py-16 lg:py-20 rounded-b-2xl">
                     <div className="max-w-3xl mx-auto space-y-6 text-left">
                         <p className="text-2xl md:text-3xl font-semibold flex justify-start font-sans "> Welcome to Probiz Connect!</p>
-                        <p className="flex  md:text-lg leading-relaxed text-muted-foreground font-sans">
-                            We are an eB2B SaaS provider specialised in offering customised solutions for small and mid-<br></br>
-                            sized businesses. Our skilled team of developers, designers, and project managers collaborates to<br></br>
-                            deliver a high-quality eB2B SaaS platform tailored to each client's unique needs.<br></br>
+                        <p className=" md:text-lg leading-relaxed text-muted-foreground font-sans">
+                            We are an eB2B SaaS provider specialised in offering customised solutions for small and mid-
+                            sized businesses. Our skilled team of developers, designers, and project managers collaborates to
+                            deliver a high-quality eB2B SaaS platform tailored to each client's unique needs.
                             Our mission is to empower businesses to efficiently manage operations at every growth stage
                         </p>
                     </div>
-                    <div className="max-w-5xl mx-auto space-y-6">
-                        <h3 className="text-2xl md:text-3xl font-semibold font-sans">Get in Touch</h3>
+                    <div className="max-w-5xl mx-auto space-y-6 text-left">
+                        <h3 className="text-2xl md:text-3xl font-semibold font-sans text-center">Get in Touch</h3>
                         <p className="text-base md:text-lg leading-relaxed text-muted-foreground font-sans">To know more about our product, reach out<br></br>
                             to us today, and we'll be happy to <br></br>
                             demonstrate the product features.</p>

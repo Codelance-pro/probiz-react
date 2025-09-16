@@ -12,7 +12,7 @@ const AppBar = () => {
   <div className="max-w-7xl mx-auto">
     <nav className="flex items-center justify-between rounded-2xl px-4 sm:px-6 py-3 bg-card/80 backdrop-blur-sm shadow-lg">
       <div className="flex items-center space-x-4 sm:space-x-8">
-        <img src={logo} alt="Probiz Logo" className="w-20 h-12 sm:w-24 sm:h-12" />
+        <img src={logo} alt="Probiz Logo" width={200} height={100} />
         
         {/* Desktop Navigation - Fixed with explicit display classes */}
         <div className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
