@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About.jsx";
+import NavBar from "./pages/NavBar.jsx";
 
 const queryClient = new QueryClient();
 
@@ -14,9 +16,10 @@ const App = () => (
       <Toaster />
       <Sonner /> */}
       <Router>
+        <NavBar/>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
