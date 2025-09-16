@@ -18,7 +18,7 @@ const About = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <div className="bg-background text-foreground px-4 sm:px-6  ">
+        <div className="bg-background text-foreground px-4 sm:px-6">
             {/* Hero / Breadcrumb */}
 
             
@@ -26,7 +26,7 @@ const About = () => {
                 <h1 className="text-4xl md:text-5xl mb-4 font-sans">Who Are We?</h1>
 
                 {/* Who Are We */}
-                <section className="section-1 py-16 px-6 sm:px-12 grid sm:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-4 sm px-4 sm:px-6 py-10 sm:py-16 lg:py-20 rounded-b-2xl">
+                <section className="py-16 px-6 sm:px-12 grid sm:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 gap-4 sm px-4 sm:px-6 py-10 sm:py-16 lg:py-20 rounded-b-2xl">
                     <div className="max-w-3xl mx-auto space-y-6 text-left">
                         <p className="text-2xl md:text-3xl font-semibold flex justify-start font-sans "> Welcome to Probiz Connect!</p>
                         <p className=" md:text-lg leading-relaxed text-muted-foreground font-sans">
@@ -112,7 +112,7 @@ const About = () => {
                     </p> */}
                 </div>
 
-                <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                <div className="max-w-6xl mx-auto flex justify-center gap-8 sm:gap-12 md:gap-16 flex-wrap">
                     {/* Team Member Card */}
                     <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
                         <img

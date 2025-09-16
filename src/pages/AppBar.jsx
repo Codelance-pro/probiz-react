@@ -22,9 +22,12 @@ const AppBar = () => {
           <Link to="/about" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
             About
           </Link>
-          <a href="#" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
+          <Link to="/contact" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
+            Contact
+          </Link>
+          {/* <a href="#" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
             Pricing
-          </a>
+          </a> */}
           <a href="#" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
             Blog
           </a>
