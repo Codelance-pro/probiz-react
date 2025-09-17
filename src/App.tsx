@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import AppBar from "./pages/AppBar.jsx";
+import Blogs from "./pages/Blogs.jsx";
+import BlogDetail from "./pages/BlogDetail.jsx";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +37,8 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<PageWrapper><Index /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
+           <Route path="/blogs" element={<PageWrapper><Blogs /></PageWrapper>} />
+           {/* <Route path="/blogs/:id" element={<PageWrapper><BlogDetail /></PageWrapper>} /> */}
         <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
