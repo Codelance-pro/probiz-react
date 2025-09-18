@@ -61,12 +61,18 @@ const AppBar = () => {
           <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors py-2">
             About
           </Link>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
+           <Link to="/contact" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
+            Contact
+          </Link>
+           <Link to="/blogs" className="text-sm lg:text-base text-muted-foreground hover:text-foreground transition-colors">
+            Blogs
+          </Link>
+          {/* <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
             Pricing
           </a>
           <a href="#" className="text-muted-foreground hover:text-foreground transition-colors py-2">
             Blog
-          </a>
+          </a> */}
           <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full w-full flex items-center justify-center">
             Book a Demo
           </Button>
