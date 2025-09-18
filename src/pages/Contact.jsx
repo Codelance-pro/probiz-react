@@ -1,99 +1,271 @@
-import React from "react";
-import { Button } from "../components/ui/button";
+import React, { useState, useEffect } from "react";
+import { MapPin, Clock, Phone, Mail, MessageSquare, Send, CheckCircle, Sparkles, ArrowUpRight, Globe } from "lucide-react";
 import contact from "@/assets/contact.webp";
-
 const Contact = () => {
+  const [isVisible, setIsVisible] = useState({});
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+    newsletter: false
+  });
+  const [focusedInput, setFocusedInput] = useState(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value
+    }));
+  };
+
   return (
-    <div className="px-4 sm:px-6 text-center rounded-b-2xl">
-      <section className="bg-[#d9c8fb] text-black px-4 sm:px-6 py-10 sm:py-16 lg:py-20">
-        <h2 className="text-3xl font-semibold text-center mb-10">Contact Us</h2>
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50 overflow-hidden">
+      {/* Floating Orbs Background */}
+      <div className="fixed inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '4s'}}></div>
+      </div>
 
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-10 md:gap-20">
-          {/* Left Form */}
-          <div className="flex-1">
-            <h3 className="text-xl mb-6">Drop us a line!</h3>
-            <form className="space-y-5">
-              <input
-                type="text"
-                placeholder="Name"
-                required
-                className="w-full bg-transparent border-b-2 border-gray-700 placeholder-gray-600 text-black py-3 focus:outline-none"
-              />
-              <input
-                type="email"
-                placeholder="Email*"
-                required
-                className="w-full bg-transparent border-b-2 border-gray-700 placeholder-gray-600 text-black py-3 focus:outline-none"
-              />
-              <textarea
-                placeholder="Message"
-                rows="5"
-                className="w-full bg-transparent border-b-2 border-gray-700 placeholder-gray-600 text-black py-3 focus:outline-none"
-              ></textarea>
+      {/* Hero Section with Unique Grid */}
+      <section className="relative px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        {/* Floating Title */}
+        <div className="relative z-10 mb-16">
+          <div className="text-center lg:text-left lg:ml-20">
+            <div className="inline-block">
+              <div className="flex items-center gap-2 mb-4">
+                <Sparkles className="w-5 h-5 text-purple-500 animate-pulse" />
+                <span className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Get Connected</span>
+              </div>
+              <h1 className="text-6xl lg:text-8xl font-black text-gray-900 mb-4">
+                Let's
+                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">
+                  Create Magic
+                </span>
+              </h1>
+              <div className="h-2 w-32 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mt-6"></div>
+            </div>
+          </div>
+        </div>
 
-              <label className="flex items-center text-sm">
-                <input type="checkbox" className="mr-2" />
-                Sign up for our email list for updates, promotions, and more.
-              </label>
+        {/* Bento Box Grid Layout */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 relative">
+          
+          {/* Contact Form - Large Card */}
+          <div className="lg:col-span-7 lg:row-span-2 group">
+            <div className="relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-blue-600 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300"></div>
+              <div className="relative bg-white rounded-3xl p-8 lg:p-10 h-full shadow-2xl">
+                <div className="flex items-center justify-between mb-8">
+                  <h3 className="text-2xl font-bold text-gray-800">Send us a message</h3>
+                  <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl flex items-center justify-center animate-bounce">
+                    <Send className="w-6 h-6 text-white" />
+                  </div>
+                </div>
 
-              <Button
-                type="submit"
-                className="w-full bg-gray-800 text-white font-semibold py-4 hover:bg-gray-700 transition rounded-md"
-              >
-                SEND
-              </Button>
-            </form>
-            <p className="text-xs text-center mt-6 opacity-80">
-              This site is protected by reCAPTCHA and the Google Privacy Policy
-              and Terms of Service apply.
-            </p>
+                <div className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="relative">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Your Name"
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        onFocus={() => setFocusedInput('name')}
+                        onBlur={() => setFocusedInput(null)}
+                        className="w-full px-4 py-4 bg-gray-50 rounded-2xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
+                      />
+                    </div>
+                    <div className="relative">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Your Email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        onFocus={() => setFocusedInput('email')}
+                        onBlur={() => setFocusedInput(null)}
+                        className="w-full px-4 py-4 bg-gray-50 rounded-2xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="relative">
+                    <textarea
+                      name="message"
+                      placeholder="Tell us about your project..."
+                      rows="6"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      onFocus={() => setFocusedInput('message')}
+                      onBlur={() => setFocusedInput(null)}
+                      className="w-full px-4 py-4 bg-gray-50 rounded-2xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-purple-500 transition-all duration-300 resize-none"
+                    ></textarea>
+                  </div>
+
+                  <label className="flex items-center cursor-pointer group">
+                    <div className="relative mr-3">
+                      <input 
+                        type="checkbox" 
+                        name="newsletter"
+                        checked={formData.newsletter}
+                        onChange={handleInputChange}
+                        className="sr-only" 
+                      />
+                      <div className={`w-6 h-6 rounded-lg transition-all duration-300 ${
+                        formData.newsletter 
+                          ? 'bg-gradient-to-r from-purple-500 to-blue-500' 
+                          : 'bg-gray-200 group-hover:bg-gray-300'
+                      }`}>
+                        {formData.newsletter && (
+                          <CheckCircle className="w-4 h-4 text-white absolute top-1 left-1" />
+                        )}
+                      </div>
+                    </div>
+                    <span className="text-gray-600 text-sm">
+                      Keep me updated with news and offers
+                    </span>
+                  </label>
+
+                  <button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-4 rounded-2xl hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2 group">
+                    <span>Send Message</span>
+                    <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* Right Info */}
-          <div className="flex-1 space-y-5">
-            <Button className="bg-white text-black px-6 py-3 font-semibold hover:bg-gray-200 transition rounded-md">
-              💬 CHAT WITH US!
-            </Button>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-2">
-                Probiz Technologies Pvt Ltd
-              </h3>
-              <p className="mb-3">
-                Unit-3F-03, Level 3, Century Central, Mango Garden Layout,
-                Bikasipura, Kanakapura Main Road, Bengaluru-560062
-              </p>
-              <p className="font-bold">9900029602</p>
+          {/* Quick Chat Card */}
+          <div className="lg:col-span-5 group">
+            <div className="relative h-full">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl opacity-90"></div>
+              <div className="relative bg-gradient-to-br from-green-500 to-emerald-600 rounded-3xl p-8 h-full flex flex-col justify-center shadow-xl hover:shadow-2xl transition-all duration-300">
+                <div className="text-white">
+                  <MessageSquare className="w-12 h-12 mb-4 animate-pulse" />
+                  <h3 className="text-2xl font-bold mb-2">Live Chat</h3>
+                  <p className="text-green-100 mb-6">Get instant answers from our team</p>
+                  <button className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors duration-300 flex items-center gap-2 group">
+                    Start Chatting
+                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </button>
+                </div>
+              </div>
             </div>
+          </div>
 
-            <div>
-              <h4 className="text-lg font-semibold mb-1">Hours</h4>
-              <p>Open today 09:00 am – 05:00 pm</p>
+          {/* Office Location Card */}
+          <div className="lg:col-span-5 group">
+            <div className="bg-gray-900 rounded-3xl p-8 h-full shadow-xl hover:shadow-2xl transition-all duration-300 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500 rounded-full filter blur-3xl opacity-20"></div>
+              <div className="relative z-10">
+                <MapPin className="w-10 h-10 text-purple-400 mb-4" />
+                <h3 className="text-xl font-bold text-white mb-2">Visit Our Office</h3>
+                <p className="text-gray-400 text-sm mb-4">
+                  Century Central, Level 3<br/>
+                  Bengaluru-560062
+                </p>
+                <a href="#" className="text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors duration-300 flex items-center gap-1">
+                  Get Directions
+                  <ArrowUpRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Phone Card - Floating Style */}
+          <div className="lg:col-span-3 group">
+            <div className="bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl p-6 h-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <Phone className="w-8 h-8 text-white mb-3" />
+              <p className="text-white/80 text-sm mb-1">Call us</p>
+              <p className="text-white font-bold text-lg">9900029602</p>
+            </div>
+          </div>
+
+          {/* Email Card */}
+          <div className="lg:col-span-3 group">
+            <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-6 h-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <Mail className="w-8 h-8 text-white mb-3" />
+              <p className="text-white/80 text-sm mb-1">Email</p>
+              <p className="text-white font-bold text-sm">hello@probiz.com</p>
+            </div>
+          </div>
+
+          {/* Working Hours Card */}
+          <div className="lg:col-span-6 group">
+            <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-3xl p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="flex items-start justify-between">
+                <div>
+                  <Clock className="w-10 h-10 text-purple-600 mb-4" />
+                  <h3 className="text-xl font-bold text-gray-800 mb-4">Working Hours</h3>
+                  <div className="space-y-2">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Monday - Friday</span>
+                      <span className="font-semibold text-gray-800">9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Saturday</span>
+                      <span className="font-semibold text-gray-800">10:00 AM - 4:00 PM</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-600">Sunday</span>
+                      <span className="font-semibold text-gray-800">Closed</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="w-24 h-24 bg-gradient-to-br from-purple-400 to-blue-400 rounded-2xl opacity-20 animate-pulse"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Floating FAQ Button */}
+        <div className="fixed bottom-8 right-8 z-50">
+          {/* <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white p-4 rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-110 transition-all duration-300 group">
+            <MessageSquare className="w-6 h-6 group-hover:rotate-12 transition-transform" />
+          </button> */}
+        </div>
+      </section>
+
+      {/* Global HQ Section */}
+      <section className="relative px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-b from-transparent to-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <Globe className="w-5 h-5 text-purple-600" />
+              <span className="text-sm font-semibold text-gray-600 tracking-wider uppercase">Global Presence</span>
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-gray-900">
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600">Headquarters</span>
+            </h2>
+          </div>
+          
+          <div className="relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300 opacity-10"></div>
+            <div className="relative bg-white rounded-3xl p-2 shadow-2xl">
+              <div className="aspect-video bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl flex items-center justify-center">
+                {/* <div className="text-center">
+                  <MapPin className="w-16 h-16 text-purple-600 mx-auto mb-4" />
+                  <p className="text-xl font-bold text-gray-800">Bengaluru Tech Hub</p>
+                  <p className="text-gray-600">Innovation Center</p>
+                </div> */}
+                <img src={contact} alt="Global HQ" className="w-full h-full object-cover rounded-2xl" />
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section className="bg-transparent text-black px-4 sm:px-6 py-10 sm:py-16 lg:py-20">
-        <h2 className="text-5xl font-sans text-center mb-10">HQ Bengaluru</h2>
-        <img src={contact} alt="contact" width={700} className=" mx-auto"  />
-        </section>
-
-          <footer className=" bg-gray-500 px-4 sm:px-6 py-8 sm:py-12 border-t border-border/20">
-                <div className="max-w-7xl mx-auto text-center">
-                  <div className="mb-6 sm:mb-8">
-                    <h2 className="text-xl text-white sm:text-2xl font-bold text-foreground mb-3 sm:mb-4">Ready to get started?</h2>
-                    <p className="text-sm text-white sm:text-base text-muted-foreground mb-4 sm:mb-6 px-4">Join thousands of teams already using Probiz to boost their productivity.</p>
-                    <Button size="lg" className="bg-black text-white hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center mx-auto">
-                      {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
-                      Book a Demo
-                    </Button>
-                  </div>
-                  <div className="text-xs text-black sm:text-sm text-muted-foreground">
-                    <p>&copy; 2023 Probiz. All rights reserved.</p>
-                  </div>
-                </div>
-              </footer>
     </div>
   );
 };

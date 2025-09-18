@@ -8,7 +8,7 @@ const AppBar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
      <div className="bg-gradient-card px-4 sm:px-6 mt-2">
-           <header className="relative z-50 px-4 sm:px-6 py-4 bg-[#d9c8fb] rounded-t-2xl">
+           <header className="relative z-50 px-4 sm:px-6 py-4 bg-[#dbeafe] rounded-t-2xl">
   <div className="max-w-7xl mx-auto">
     <nav className="flex items-center justify-between rounded-2xl px-4 sm:px-6 py-3 bg-card/80 backdrop-blur-sm shadow-lg">
       <div className="flex items-center space-x-4 sm:space-x-8">
