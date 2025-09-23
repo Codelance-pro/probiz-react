@@ -189,7 +189,7 @@ const Contact = () => {
             <div className="bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl p-6 h-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <Phone className="w-8 h-8 text-white mb-3" />
               <p className="text-white/80 text-sm mb-1">Call us</p>
-              <p className="text-white font-bold text-lg">9900029602</p>
+              <p className="text-white font-bold text-lg">9663177996</p>
             </div>
           </div>
 
@@ -198,12 +198,12 @@ const Contact = () => {
             <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-3xl p-6 h-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <Mail className="w-8 h-8 text-white mb-3" />
               <p className="text-white/80 text-sm mb-1">Email</p>
-              <p className="text-white font-bold text-sm">hello@probiz.com</p>
+              <p className="text-white font-bold text-sm">infoprobizconnect.io</p>
             </div>
           </div>
 
           {/* Working Hours Card */}
-          <div className="lg:col-span-6 group">
+          {/* <div className="lg:col-span-6 group">
             <div className="bg-gradient-to-r from-purple-100 to-blue-100 rounded-3xl p-8 h-full shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex items-start justify-between">
                 <div>
@@ -227,7 +227,7 @@ const Contact = () => {
                 <div className="w-24 h-24 bg-gradient-to-br from-purple-400 to-blue-400 rounded-2xl opacity-20 animate-pulse"></div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Floating FAQ Button */}
@@ -239,7 +239,7 @@ const Contact = () => {
       </section>
 
       {/* Global HQ Section */}
-      <section className="relative px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-b from-transparent to-gray-50">
+      {/* <section className="relative px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-b from-transparent to-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 mb-4">
@@ -255,17 +255,17 @@ const Contact = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-transform duration-300 opacity-10"></div>
             <div className="relative bg-white rounded-3xl p-2 shadow-2xl">
               <div className="aspect-video bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl flex items-center justify-center">
-                {/* <div className="text-center">
+                <div className="text-center">
                   <MapPin className="w-16 h-16 text-purple-600 mx-auto mb-4" />
                   <p className="text-xl font-bold text-gray-800">Bengaluru Tech Hub</p>
                   <p className="text-gray-600">Innovation Center</p>
-                </div> */}
+                </div>
                 <img src={contact} alt="Global HQ" className="w-full h-full object-cover rounded-2xl" />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
