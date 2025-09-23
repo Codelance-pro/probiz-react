@@ -100,12 +100,12 @@ const About = () => {
 
                             <div className="flex items-center space-x-6 animate-slide-in-left" style={{ animationDelay: '0.6s' }}>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-black">500+</div>
+                                    <div className="text-3xl font-bold text-black">10+</div>
                                     <div className="text-sm text-purple-700">Happy Clients</div>
                                 </div>
                                 <div className="w-px h-12 bg-purple-400 text-black"></div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-black">5+</div>
+                                    <div className="text-3xl font-bold text-black">3+</div>
                                     <div className="text-sm text-purple-700">Years Experience</div>
                                 </div>
                                 <div className="w-px h-12 bg-purple-400"></div>

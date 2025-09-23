@@ -12,6 +12,8 @@ import Contact from "./pages/Contact.jsx";
 import AppBar from "./pages/AppBar.jsx";
 import Blogs from "./pages/Blogs.jsx";
 import BlogDetail from "./pages/BlogDetail.jsx";
+import SalesConnect from "./pages/SalesConnect.jsx";
+import DealerConnect from "./pages/DealerConnect.jsx";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +41,8 @@ const AnimatedRoutes = () => {
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
            <Route path="/blogs" element={<PageWrapper><Blogs /></PageWrapper>} />
            {/* <Route path="/blogs/:id" element={<PageWrapper><BlogDetail /></PageWrapper>} /> */}
+           {/* <Route path="/features/sales-connect" element={<SalesConnect />} />
+           <Route path="/features/dealer-connect" element={<DealerConnect />} /> */}
         <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
