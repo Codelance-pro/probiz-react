@@ -10,23 +10,23 @@ const DealerConnect = () => {
     {
       icon: <Package className="w-8 h-8" />,
       title: "Streamlined Order Processing",
-      description: "Automate and optimize order workflows across your entire dealer network with real-time processing capabilities.",
+      description: "Probiz Connect's intuitive platform streamlines order management, enabling dealers and distributors to place orders easily and allowing your sales team to track them in real-time. This approach reduces delays and errors, ensuring quicker fulfilment of customer demands.",
       image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400&h=300&fit=crop&crop=entropy",
       gradient: "from-blue-500 to-cyan-500",
       benefits: ["Automated workflows", "Real-time updates", "Error reduction"]
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "Inventory Tracking & Management",
-      description: "Monitor stock levels, track inventory movement, and maintain optimal inventory across all dealer locations.",
+      title: "Real-time Inventory Tracking",
+      description: "Monitor your inventory in real time with Probiz Connect’s accurate stock data, enabling efficient management, preventing stockouts, and informing restocking decisions.",
       image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop&crop=entropy",
       gradient: "from-green-500 to-emerald-500",
       benefits: ["Stock optimization", "Movement tracking", "Automated alerts"]
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
-      title: "Performance Analysis & Reports",
-      description: "Detailed analytics and performance reports to monitor and identify top-performing dealers in your network.",
+      title: "Sales and Revenue Tracking",
+      description: "Probiz Connect's powerful reporting tools provide key insights into sales trends and revenue, helping you identify top-selling products and high-demand regions to strategize and optimize your sales efforts.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=entropy",
       gradient: "from-purple-500 to-pink-500",
       benefits: ["Comprehensive analytics", "Performance metrics", "Custom reports"]
@@ -34,23 +34,23 @@ const DealerConnect = () => {
     {
       icon: <MessageSquare className="w-8 h-8" />,
       title: "Enhanced Communication",
-      description: "Streamline communication between headquarters, distributors, and dealers with integrated messaging systems.",
+      description: "Probiz Connect serves as a centralised platform for seamless communication between your team and your dealers and distributors. Instant messaging, announcements, and updates keep everyone informed and aligned, fostering a stronger and more cohesive distribution network.",
       image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=300&fit=crop&crop=entropy",
       gradient: "from-indigo-500 to-blue-500",
       benefits: ["Instant messaging", "Broadcast updates", "Document sharing"]
     },
     {
       icon: <Award className="w-8 h-8" />,
-      title: "Dealer Incentive Management",
-      description: "Reward top-performing dealers with incentives and motivate your entire distribution network effectively.",
+      title: "Performance Analysis and Incentive Management",
+      description: "Stay ahead of the competition by monitoring the performance of your dealers and distributors. Probiz Connect equips you with detailed analytics and performance reports, enabling you to identify top-performing partners and reward them with incentives, thus fostering a motivated distribution network.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=entropy",
       gradient: "from-orange-500 to-red-500",
       benefits: ["Reward systems", "Performance tracking", "Motivation tools"]
     },
     {
       icon: <Network className="w-8 h-8" />,
-      title: "Network Management",
-      description: "Manage your entire dealer and distributor network from a centralized platform with comprehensive controls.",
+      title: "Diverse Reward Mechanisms",
+      description: "Partners can be awarded points for completing specific tasks or actions, such as scanning a coupon placed inside products like paints. This interactive approach not only incentivizes partners but also encourages end customers to engage with your products and promotions actively.",
       image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop&crop=entropy",
       gradient: "from-teal-500 to-cyan-500",
       benefits: ["Centralized control", "Network monitoring", "Scalable management"]
@@ -58,7 +58,7 @@ const DealerConnect = () => {
   ];
 
   const stats = [
-    { number: "1000+", label: "Active Dealers", icon: <Users className="w-6 h-6" />, color: "text-blue-600" },
+    { number: "100+", label: "Active Dealers", icon: <Users className="w-6 h-6" />, color: "text-blue-600" },
     { number: "95%", label: "Network Efficiency", icon: <Target className="w-6 h-6" />, color: "text-green-600" },
     { number: "40%", label: "Performance Boost", icon: <TrendingUp className="w-6 h-6" />, color: "text-purple-600" },
     { number: "24/7", label: "Support Available", icon: <Shield className="w-6 h-6" />, color: "text-orange-600" }
@@ -66,18 +66,18 @@ const DealerConnect = () => {
 
   const benefits = [
     {
-      title: "Sustained Growth",
-      description: "Build an efficient dealer network that drives consistent growth and market expansion",
+      title: "What is the size of your dealer network?",
+      description: "Whether you have a small network of dealers or a vast distribution network spanning multiple regions, Probiz Connect is designed to scale alongside your business.",
       icon: <TrendingUp className="w-12 h-12" />
     },
     {
-      title: "Market Leadership",
-      description: "Achieve competitive advantage through optimized distribution and dealer management",
+      title: "Will you be able to identify the top-performing dealer, distributor, or partner?",
+      description: "Probizconnect equips you with detailed analytics and performance reports, enabling you to identify top-performing partners and reward them with incentives, thus fostering a motivated distribution network.",
       icon: <Star className="w-12 h-12" />
     },
     {
-      title: "Network Optimization",
-      description: "Streamline operations across your entire dealer and distributor ecosystem",
+      title: "How will you measure your growth?",
+      description: "Gain valuable insights into your sales trends and revenue generation with Probizconnect's robust reporting tools.",
       icon: <Network className="w-12 h-12" />
     }
   ];
@@ -198,8 +198,8 @@ const DealerConnect = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Drive Market Leadership Through Network Excellence
+            <h2 className="text-4xl font-semibold text-gray-900 mb-6">
+             Smart Solution for Dealer Management
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Transform your distribution strategy with our comprehensive dealer management platform
@@ -231,7 +231,7 @@ const DealerConnect = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Complete Platform Features
+              Order | Inventory | Sales & Revenue Tracking
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Everything you need to manage, analyze, and optimize your dealer network
@@ -280,7 +280,7 @@ const DealerConnect = () => {
       </section>
 
       {/* Analytics Showcase */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -333,7 +333,7 @@ const DealerConnect = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">

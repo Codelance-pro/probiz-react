@@ -14,6 +14,10 @@ import Blogs from "./pages/Blogs.jsx";
 import BlogDetail from "./pages/BlogDetail.jsx";
 import SalesConnect from "./pages/SalesConnect.jsx";
 import DealerConnect from "./pages/DealerConnect.jsx";
+import EmployeeConnect from "./pages/EmployeeConnect.jsx";
+import PartnerConnect from "./pages/PartnerConnect.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
+
 
 const queryClient = new QueryClient();
 
@@ -41,8 +45,10 @@ const AnimatedRoutes = () => {
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
            <Route path="/blogs" element={<PageWrapper><Blogs /></PageWrapper>} />
            {/* <Route path="/blogs/:id" element={<PageWrapper><BlogDetail /></PageWrapper>} /> */}
-           {/* <Route path="/features/sales-connect" element={<SalesConnect />} />
-           <Route path="/features/dealer-connect" element={<DealerConnect />} /> */}
+           <Route path="/features/sales-connect" element={<SalesConnect />} />
+           <Route path="/features/dealer-connect" element={<DealerConnect />} />
+           <Route path="/features/employee-connect" element={<EmployeeConnect />} />
+           <Route path="/features/partner-connect" element={<PartnerConnect />} />
         <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
@@ -55,6 +61,7 @@ const App = () => (
       <Toaster />
       <Sonner /> */}
       <Router>
+        <ScrollToTop />
         <AppBar />
         <AnimatedRoutes />
       </Router>
