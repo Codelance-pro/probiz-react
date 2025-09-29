@@ -33,8 +33,8 @@ const Contact = () => {
       {/* Floating Orbs Background */}
       <div className="fixed inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-96 h-96 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{animationDelay: '4s'}}></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '4s' }}></div>
       </div>
 
       {/* Hero Section with Unique Grid */}
@@ -60,7 +60,7 @@ const Contact = () => {
 
         {/* Bento Box Grid Layout */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 relative">
-          
+
           {/* Contact Form - Large Card */}
           <div className="lg:col-span-7 lg:row-span-2 group">
             <div className="relative h-full">
@@ -116,18 +116,17 @@ const Contact = () => {
 
                   <label className="flex items-center cursor-pointer group">
                     <div className="relative mr-3">
-                      <input 
-                        type="checkbox" 
+                      <input
+                        type="checkbox"
                         name="newsletter"
                         checked={formData.newsletter}
                         onChange={handleInputChange}
-                        className="sr-only" 
+                        className="sr-only"
                       />
-                      <div className={`w-6 h-6 rounded-lg transition-all duration-300 ${
-                        formData.newsletter 
-                          ? 'bg-gradient-to-r from-purple-500 to-blue-500' 
-                          : 'bg-gray-200 group-hover:bg-gray-300'
-                      }`}>
+                      <div className={`w-6 h-6 rounded-lg transition-all duration-300 ${formData.newsletter
+                        ? 'bg-gradient-to-r from-purple-500 to-blue-500'
+                        : 'bg-gray-200 group-hover:bg-gray-300'
+                        }`}>
                         {formData.newsletter && (
                           <CheckCircle className="w-4 h-4 text-white absolute top-1 left-1" />
                         )}
@@ -156,10 +155,16 @@ const Contact = () => {
                   <MessageSquare className="w-12 h-12 mb-4 animate-pulse" />
                   <h3 className="text-2xl font-bold mb-2">Live Chat</h3>
                   <p className="text-green-100 mb-6">Get instant answers from our team</p>
-                  <button className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors duration-300 flex items-center gap-2 group">
+                  <button
+                    onClick={() =>
+                      window.open("https://wa.me/919663177996", "_blank") // change number
+                    }
+                    className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors duration-300 flex items-center gap-2 group"
+                  >
                     Start Chatting
                     <span className="group-hover:translate-x-1 transition-transform">→</span>
                   </button>
+
                 </div>
               </div>
             </div>
@@ -173,7 +178,7 @@ const Contact = () => {
                 <MapPin className="w-10 h-10 text-purple-400 mb-4" />
                 <h3 className="text-xl font-bold text-white mb-2">Visit Our Office</h3>
                 <p className="text-gray-400 text-sm mb-4">
-                  Century Central, Level 3<br/>
+                  Century Central, Level 3<br />
                   Bengaluru-560062
                 </p>
                 <a href="#" className="text-purple-400 hover:text-purple-300 text-sm font-semibold transition-colors duration-300 flex items-center gap-1">
@@ -186,12 +191,15 @@ const Contact = () => {
 
           {/* Phone Card - Floating Style */}
           <div className="lg:col-span-3 group">
-            <div className="bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl p-6 h-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-              <Phone className="w-8 h-8 text-white mb-3" />
-              <p className="text-white/80 text-sm mb-1">Call us</p>
-              <p className="text-white font-bold text-lg">9663177996</p>
-            </div>
+            <a href="tel:9663177996">
+              <div className="bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl p-6 h-full shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
+                <Phone className="w-8 h-8 text-white mb-3" />
+                <p className="text-white/80 text-sm mb-1">Call us</p>
+                <p className="text-white font-bold text-lg">9663177996</p>
+              </div>
+            </a>
           </div>
+
 
           {/* Email Card */}
           <div className="lg:col-span-3 group">

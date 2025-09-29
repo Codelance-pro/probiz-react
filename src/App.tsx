@@ -17,6 +17,7 @@ import DealerConnect from "./pages/DealerConnect.jsx";
 import EmployeeConnect from "./pages/EmployeeConnect.jsx";
 import PartnerConnect from "./pages/PartnerConnect.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import Integration from "./pages/Integration.jsx";
 
 
 const queryClient = new QueryClient();
@@ -49,6 +50,7 @@ const AnimatedRoutes = () => {
            <Route path="/features/dealer-connect" element={<DealerConnect />} />
            <Route path="/features/employee-connect" element={<EmployeeConnect />} />
            <Route path="/features/partner-connect" element={<PartnerConnect />} />
+            <Route path="/features/integrations" element={<Integration />} />
         <Route path="*" element={<PageWrapper><NotFound /></PageWrapper>} />
       </Routes>
     </AnimatePresence>

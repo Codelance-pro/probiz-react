@@ -67,12 +67,12 @@ export function ApplexLanding() {
               <p className="text-semibold text-basesm:text-lg md:text-2xl mb-4"> AI-Powered eB2B Cloud Platform for SME's</p>
               <p className="text-base sm:text-lg md:text-1xl text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed px-4">
                 A software-as-a-service (SaaS) solution designed for consumer goods brands of
-                various sizes—micro, small, and medium—to digitise, automate, optimise, and efficiently manage the 
+                various sizes—micro, small, and medium—to digitise, automate, optimise, and efficiently manage the
                 expansion of their business-to-business (B2B) sales operations involving retailers, distributors, and sales teams.
               </p>
               <h1 className="text-2xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-4 sm:mb-6 leading-tight px-2"> Carefully Crafted for SME's in India</h1>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 lg:mb-16 px-4">
-                   <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
+                <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
                   {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
                   Try for Free
                 </Button>
@@ -182,56 +182,56 @@ export function ApplexLanding() {
           <div className="space-y-6 sm:space-y-8">
             {/* First Row - Straight */}
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto">
-                <Link to="/features/sales-connect" className="block">
-              <FeatureCard
-                icon={RefreshCw}
-                title="Sales Connect"
-                description="Applex seamlessly synchronizes and advanced technology to craft exceptional digital experiences."
-                className="animate-fade-in"
-              />
+              <Link to="/features/sales-connect" className="block">
+                <FeatureCard
+                  icon={RefreshCw}
+                  title="Sales Connect"
+                  description="Applex seamlessly synchronizes and advanced technology to craft exceptional digital experiences."
+                  className="animate-fade-in"
+                />
               </Link>
 
               <Link to="/features/dealer-connect" className="block">
-              <FeatureCard
-                icon={Settings}
-                title="Dealer Connect"
-                description="Effortlessly organize tasks, projects, and ideas to boost efficiency and stay on track."
-                className="animate-fade-in"
-              />
+                <FeatureCard
+                  icon={Settings}
+                  title="Dealer Connect"
+                  description="Effortlessly organize tasks, projects, and ideas to boost efficiency and stay on track."
+                  className="animate-fade-in"
+                />
               </Link>
             </div>
 
             {/* Second Row - Shuffled/Offset */}
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-4xl mx-auto lg:ml-16">
               <Link to="/features/employee-connect" className="block">
-              <FeatureCard
-                icon={Globe}
-                title="Employee Connect"
-                description="Applex creativity, innovation, and advanced technology to craft exceptional digital experiences."
-                className="animate-fade-in"
-              />
+                <FeatureCard
+                  icon={Globe}
+                  title="Employee Connect"
+                  description="Applex creativity, innovation, and advanced technology to craft exceptional digital experiences."
+                  className="animate-fade-in"
+                />
               </Link>
 
               <Link to="/features/partner-connect" className="block">
-              <FeatureCard
-                icon={Zap}
-                title="Partner Connect"
-                description="Experience blazing fast performance with optimized workflows and instant responses."
-                className="animate-fade-in"
-              />
+                <FeatureCard
+                  icon={Zap}
+                  title="Partner Connect"
+                  description="Experience blazing fast performance with optimized workflows and instant responses."
+                  className="animate-fade-in"
+                />
               </Link>
-              
+
             </div>
-              <div className="flex items-center justify-center w-full text-center text-muted-foreground">
-                <Link to="/features/integrations" className="animate-fade-in">
-              <FeatureCard
-                icon={Globe}
-                title="Itegrations"
-                description="Applex creativity, innovation, and advanced technology to craft exceptional digital experiences."
-                className="animate-fade-in"
-              />
+            <div className="flex items-center justify-center w-full text-center text-muted-foreground">
+              <Link to="/features/integrations" className="animate-fade-in">
+                <FeatureCard
+                  icon={Globe}
+                  title="Itegrations"
+                  description="Applex creativity, innovation, and advanced technology to craft exceptional digital experiences."
+                  className="animate-fade-in"
+                />
               </Link>
-          
+
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ export function ApplexLanding() {
       <section className="bg-gradient-to-b from-[#dbeafe] via-[#eef2ff] to-[#fff1f2] py-12 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
-            Supercharge with your <span className="bg-gradient-primary bg-clip-text text-transparent">Sale and Distribution with AI Today</span> 
+            Supercharge with your <span className="bg-gradient-primary bg-clip-text text-transparent">Sale and Distribution with AI Today</span>
           </h1>
 
           {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
@@ -288,7 +288,7 @@ export function ApplexLanding() {
                 Establish a brand loyalty program for your partners to strengthen your market presence.<br></br>
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                 <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
+                <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
                   {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
                   Try for free
                 </Button>
@@ -314,13 +314,13 @@ export function ApplexLanding() {
       </section>
 
 
-       <section className="bg-gradient-to-b from-blue-50 via-purple-50 to-pink-50 py-20 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-b from-blue-50 via-purple-50 to-pink-50 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Over 25+ Integrations
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto mb-16 leading-relaxed">
-            Unlock limitless possibilities with our platform's extensive library of over 25+ integrations, 
+            Unlock limitless possibilities with our platform's extensive library of over 25+ integrations,
             empowering seamless connectivity across your favorite tools and services.
           </p>
 
@@ -335,14 +335,14 @@ export function ApplexLanding() {
                 </div> */}
                 <img src={company1} alt="Tally Logo" className="w-full h-24 object-contain" />
               </div>
-              
+
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">Zoho</div>
                 </div> */}
                 <img src={company2} alt="Zoho Logo" className="w-full h-24 object-contain" />
               </div>
-              
+
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-red-600">IndiaMART</div>
@@ -350,14 +350,14 @@ export function ApplexLanding() {
                 </div> */}
                 <img src={company3} alt="IndiaMART Logo" className="w-full h-24 object-contain" />
               </div>
-              
+
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-orange-500">Justdial</div>
                 </div> */}
                 <img src={company4} alt="Justdial Logo" className="w-full h-24 object-contain" />
               </div>
-              
+
               {/* <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-500">paytm</div>
@@ -452,87 +452,87 @@ export function ApplexLanding() {
       </section>
 
       {/* Recent Articles */}
-     <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-gradient-card">
-  <div className="max-w-7xl mx-auto">
-    <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-slide-up">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">GAIN 360° - Visibility & Control</h2>
-      <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
-        Stay updated with industry news, tips, and the latest productivity workflow
-        optimization strategies.
-      </p>
-    </div>
-
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-      {[
-        {
-          title: "Sales Connect",
-          excerpt: "We understand the challenges brands face in sales and distribution management. Our comprehensive solutions streamline operations and increase revenue with real-time order processing, inventory tracking, performance analytics, incentive management, seamless communication, route optimisation, and customisable stakeholder access.",
-          date: "November 2022",
-          color: "from-purple-500 to-purple-700",
-          icon: <TrendingUp className="w-8 h-8" />
-        },
-        {
-          title: "Dealer Connect",
-          excerpt: "A Dealer & Distributor Management platform streamlines order processing, inventory tracking, performance analysis, and communication for managing your network. Probiz Connect provides detailed analytics and reports to identify top-performing dealers, enabling you to reward and motivate your dealer, distribution and retailer network.",
-          date: "November 2022",
-          color: "from-purple-500 to-purple-700",
-          icon: <Users className="w-8 h-8" />
-        },
-        {
-          title: "Employee Connect",
-          excerpt: "At Probiz Connect, we understand the vital role field sales and distribution teams play in boosting revenue and fostering lasting customer relationships. That's why we've created a comprehensive empowerment solution that equips your team with the tools and technology to excel, while providing powerful reporting tools for valuable sales and revenue insights.",
-          date: "November 2022",
-          color: "from-purple-500 to-purple-700",
-          icon: <Briefcase className="w-8 h-8" />
-        },
-        {
-          title: "Partner Connect",
-          excerpt: "By leveraging influencers and rewarding loyalty programs, your brand can excel in a competitive market and leave a lasting impression on customers and partners.",
-          date: "November 2022",
-          color: "from-purple-500 to-purple-700",
-          icon: <Handshake className="w-8 h-8" />
-        },
-        {
-          title: "Reward Schemes",
-          excerpt: "You can design rewards that match your business goals, choosing between points-based rewards or instant cash incentives according to your partner engagement strategy.",
-          date: "November 2022",
-          color: "from-purple-500 to-purple-700",
-          icon: <Gift className="w-8 h-8" />
-        },
-        {
-          title: "Loyalty Program",
-          excerpt: "Easily establish a brand loyalty program for your partners to strengthen your market presence. Reward points for actions like scanning coupons inside products.",
-          date: "November 2022",
-          color: "from-purple-500 to-purple-700",
-          icon: <Award className="w-8 h-8" />
-        }
-      ].map((article, index) => (
-        <Card key={index} className="p-4 sm:p-6 bg-card backdrop-blur-sm border-0 shadow-card hover:shadow-floating transition-all duration-300 hover:-translate-y-1 animate-fade-in group cursor-pointer hover:shadow-[0_8px_30px_rgb(219,234,254,0.6)]">
-          {/* Icon Header */}
-          <div className="mb-4 sm:mb-6">
-            <div className={`w-16 h-16 bg-gradient-to-r ${article.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg`}>
-              <div className="text-white">
-                {article.icon}
-              </div>
-            </div>
+      <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-gradient-card">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-slide-up">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">GAIN 360° - Visibility & Control</h2>
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
+              Stay updated with industry news, tips, and the latest productivity workflow
+              optimization strategies.
+            </p>
           </div>
 
-          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2 sm:mb-3 group-hover:text-primary transition-colors">
-            {article.title}
-          </h3>
-          <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
-            {article.excerpt}
-          </p>
-          <div className={`mt-6 w-full h-1 bg-gradient-to-r ${article.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
-          <div className="flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform text-sm sm:text-base mt-2">
-            Read more
-            <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4 ml-2" />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            {[
+              {
+                title: "Sales Connect",
+                excerpt: "We understand the challenges brands face in sales and distribution management. Our comprehensive solutions streamline operations and increase revenue with real-time order processing, inventory tracking, performance analytics, incentive management, seamless communication, route optimisation, and customisable stakeholder access.",
+                date: "November 2022",
+                color: "from-purple-500 to-purple-700",
+                icon: <TrendingUp className="w-8 h-8" />
+              },
+              {
+                title: "Dealer Connect",
+                excerpt: "A Dealer & Distributor Management platform streamlines order processing, inventory tracking, performance analysis, and communication for managing your network. Probiz Connect provides detailed analytics and reports to identify top-performing dealers, enabling you to reward and motivate your dealer, distribution and retailer network.",
+                date: "November 2022",
+                color: "from-purple-500 to-purple-700",
+                icon: <Users className="w-8 h-8" />
+              },
+              {
+                title: "Employee Connect",
+                excerpt: "At Probiz Connect, we understand the vital role field sales and distribution teams play in boosting revenue and fostering lasting customer relationships. That's why we've created a comprehensive empowerment solution that equips your team with the tools and technology to excel, while providing powerful reporting tools for valuable sales and revenue insights.",
+                date: "November 2022",
+                color: "from-purple-500 to-purple-700",
+                icon: <Briefcase className="w-8 h-8" />
+              },
+              {
+                title: "Partner Connect",
+                excerpt: "By leveraging influencers and rewarding loyalty programs, your brand can excel in a competitive market and leave a lasting impression on customers and partners.",
+                date: "November 2022",
+                color: "from-purple-500 to-purple-700",
+                icon: <Handshake className="w-8 h-8" />
+              },
+              {
+                title: "Reward Schemes",
+                excerpt: "You can design rewards that match your business goals, choosing between points-based rewards or instant cash incentives according to your partner engagement strategy.",
+                date: "November 2022",
+                color: "from-purple-500 to-purple-700",
+                icon: <Gift className="w-8 h-8" />
+              },
+              {
+                title: "Loyalty Program",
+                excerpt: "Easily establish a brand loyalty program for your partners to strengthen your market presence. Reward points for actions like scanning coupons inside products.",
+                date: "November 2022",
+                color: "from-purple-500 to-purple-700",
+                icon: <Award className="w-8 h-8" />
+              }
+            ].map((article, index) => (
+              <Card key={index} className="p-4 sm:p-6 bg-card backdrop-blur-sm border-0 shadow-card hover:shadow-floating transition-all duration-300 hover:-translate-y-1 animate-fade-in group cursor-pointer hover:shadow-[0_8px_30px_rgb(219,234,254,0.6)]">
+                {/* Icon Header */}
+                <div className="mb-4 sm:mb-6">
+                  <div className={`w-16 h-16 bg-gradient-to-r ${article.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-lg`}>
+                    <div className="text-white">
+                      {article.icon}
+                    </div>
+                  </div>
+                </div>
+
+                <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2 sm:mb-3 group-hover:text-primary transition-colors">
+                  {article.title}
+                </h3>
+                <p className="text-sm sm:text-base text-muted-foreground mb-3 sm:mb-4 leading-relaxed">
+                  {article.excerpt}
+                </p>
+                <div className={`mt-6 w-full h-1 bg-gradient-to-r ${article.color} rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500`}></div>
+                {/* <div className="flex items-center text-primary font-medium group-hover:translate-x-2 transition-transform text-sm sm:text-base mt-2">
+                  Read more
+                  <ArrowRight className="w-3 sm:w-4 h-3 sm:h-4 ml-2" />
+                </div> */}
+              </Card>
+            ))}
           </div>
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       <section className="bg-gradient-to-b from-[#dbeafe] via-[#eef2ff] to-[#fff1f2]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 ">
@@ -555,14 +555,14 @@ export function ApplexLanding() {
             <h2 className="text-xl sm:text-2xl font-bold text-white text-foreground mb-3 sm:mb-4">Ready to get started?</h2>
             <p className="text-sm sm:text-base text-muted-foreground text-white mb-4 sm:mb-6 px-4">Join thousands of teams already using  ProbizConnect to boost their productivity.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg  ">
-              {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
-             Try for Free
-            </Button>
-            <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg ">
-              {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
-              Book a Demo
-            </Button>
+              <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg  ">
+                {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
+                Try for Free
+              </Button>
+              <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg ">
+                {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
+                Book a Demo
+              </Button>
             </div>
           </div>
           <div className="text-xs sm:text-sm text-muted-foreground text-white">

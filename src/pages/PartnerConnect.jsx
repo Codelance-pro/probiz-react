@@ -53,22 +53,22 @@ const PartnerConnect = () => {
 
   const partnerTypes = [
     {
-      title: "Retail Partners",
-      description: "Front-line partners who interact directly with end consumers",
+      title: "Measure Your Presence",
+      description: "Take control of your market presence with an easy-to-setup loyalty program that enhances partner connect and incorporates effective reward mechanisms for your partners.",
       icon: <Building className="w-12 h-12" />,
       color: "text-blue-600",
       bgColor: "bg-blue-100"
     },
     {
-      title: "Distribution Partners",
-      description: "Strategic partners who handle product distribution and logistics",
+      title: "Diverse Reward Mechanisms",
+      description: "Implement reward mechanisms by awarding points for completing specific tasks or actions, such as scanning a coupon placed inside products like paints or tanks. This strategy can enhance loyalty programs and encourage customer engagement through partner connect initiatives.",
       icon: <Users className="w-12 h-12" />,
       color: "text-purple-600",
       bgColor: "bg-purple-100"
     },
     {
-      title: "Reseller Network",
-      description: "Partners who promote and sell products in their territories",
+      title: "Connect Multiple Entities",
+      description: "Bring all your channel partners, including dealers, distributors, and influencers, onto a single platform to enhance partner connect through effective loyalty programs and reward mechanisms.",
       icon: <UserPlus className="w-12 h-12" />,
       color: "text-green-600",
       bgColor: "bg-green-100"
@@ -218,11 +218,11 @@ const PartnerConnect = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Types of Strategic Partners
+              Loyalty Program
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            {/* <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Different partner types serve unique roles in connecting your business to end consumers
-            </p>
+            </p> */}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
