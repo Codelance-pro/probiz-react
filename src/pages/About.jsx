@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
 import { ArrowRight, Menu, X, ChevronDown, Star, Users, Target, Award } from "lucide-react";
+import profile1 from "../assets/profile1.png";
+import profile2 from "../assets/profile2.png";
 
 const About = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -193,7 +195,9 @@ const About = () => {
             <section className="py-20 bg-gradient-to-b from-purple-50 to-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">Meet the Team</h2>
+                        <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
+                            Meet the Team
+                        </h2>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                             Our strength lies in the diverse skills and shared passion of our team members.
                         </p>
@@ -201,16 +205,26 @@ const About = () => {
 
                     <div className="flex justify-center gap-12 flex-wrap">
                         {[
-                            { name: "Siraj S", role: "CEO" },
-                            { name: "Hanish", role: "CTO" }
+                            {
+                                name: "Siraj S",
+                                role: "CEO",
+                                img: profile1, // ✅ import individual images
+                                linkedin: "https://linkedin.com/in/siraj-profile",
+                            },
+                            {
+                                name: "Hanish",
+                                role: "CTO",
+                                img: profile2, // ✅ another imported image
+                                linkedin: "https://linkedin.com/in/hanish-profile",
+                            },
                         ].map((member, index) => (
                             <div
                                 key={index}
                                 data-animate
                                 id={`team-${index}`}
                                 className={`transition-all duration-700 ${isVisible[`team-${index}`]
-                                    ? 'opacity-100 translate-y-0'
-                                    : 'opacity-0 translate-y-20'
+                                        ? "opacity-100 translate-y-0"
+                                        : "opacity-0 translate-y-20"
                                     }`}
                                 style={{ transitionDelay: `${index * 300}ms` }}
                             >
@@ -221,8 +235,12 @@ const About = () => {
                                     <div className="relative text-center">
                                         {/* Avatar with Animation */}
                                         <div className="relative mb-6 group-hover:scale-105 transition-transform duration-500">
-                                            <div className="w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                                                {member.name.charAt(0)}
+                                            <div className="w-32 h-32 rounded-full mx-auto flex items-center justify-center shadow-lg overflow-hidden">
+                                                <img
+                                                    src={member.img}
+                                                    alt={member.name}
+                                                    className="w-32 h-32 rounded-full object-cover"
+                                                />
                                             </div>
                                             <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full animate-ping opacity-20"></div>
                                         </div>
@@ -233,9 +251,15 @@ const About = () => {
 
                                         <div className="w-16 h-px bg-gradient-to-r from-purple-500 to-pink-500 mx-auto mb-6"></div>
 
-                                        <Button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-full px-8 py-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-                                            LinkedIn
-                                        </Button>
+                                        <a
+                                            href={member.linkedin}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            <Button className="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white rounded-full px-8 py-3 font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                                                LinkedIn
+                                            </Button>
+                                        </a>
                                     </div>
                                 </Card>
                             </div>
@@ -243,6 +267,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+
 
             {/* Call to Action - Full Width Banner */}
             <section className="py-20 bg-gradient-to-r from-purple-700 via-purple-800 to-indigo-900 relative ">
