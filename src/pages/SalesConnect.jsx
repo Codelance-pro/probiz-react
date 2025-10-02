@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronRight, BarChart3, Package, Users, TrendingUp, MessageCircle, MapPin, Shield, ArrowRight, CheckCircle, Zap, Target, Globe, ChevronDown, ChevronUp, Monitor, Smartphone, Truck, PieChart } from 'lucide-react';
+import fq from '../assets/faqs.jpg';
 
 const SalesConnect = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -96,14 +97,14 @@ const SalesConnect = () => {
             <div className="space-y-8">
               <div>
                 <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                  Transform Your 
+                  Transform Your
                   <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"> Sales Operations</span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   We recognise the challenges brands face in managing sales and distribution. Our comprehensive solutions streamline operations and boost revenue with features like real-time order processing, inventory tracking, performance analytics, and more.
                 </p>
               </div>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
                   Get Started Today
@@ -129,8 +130,8 @@ const SalesConnect = () => {
             </div>
 
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=entropy" 
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=entropy"
                 alt="Sales Dashboard Analytics"
                 className="rounded-2xl shadow-2xl w-full"
               />
@@ -166,29 +167,35 @@ const SalesConnect = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
+                className="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-blue-300 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2"
               >
-                <div className="mb-6">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    className="w-full h-48 object-cover rounded-lg mb-4"
-                  />
-                  <div className={`w-16 h-16 bg-gradient-to-r ${feature.gradient} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                    <div className="text-white">
-                      {feature.icon}
+                {/* Large Icon Header */}
+                <div className="text-center mb-8">
+                  <div className={`w-20 h-20 bg-gradient-to-r ${feature.gradient} rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300 shadow-lg`}>
+                    <div className="text-white transform group-hover:rotate-12 transition-transform duration-300">
+                      {React.cloneElement(feature.icon, { className: 'w-10 h-10' })}
                     </div>
                   </div>
+
+                  {/* Decorative Elements */}
+                  <div className="flex justify-center space-x-2 mb-4">
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${feature.gradient} opacity-60`}></div>
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${feature.gradient} opacity-40`}></div>
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${feature.gradient} opacity-60`}></div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  {feature.description}
-                </p>
-                <div className="flex items-center text-blue-600 group-hover:translate-x-2 transition-transform duration-300">
-                  <span className="text-sm font-semibold">Learn More</span>
-                  <ChevronRight className="ml-2 w-4 h-4" />
+
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    {feature.description}
+                  </p>
+                  <div className="flex items-center justify-center text-blue-600 group-hover:translate-x-2 transition-transform duration-300">
+                    <span className="text-sm font-semibold">Learn More</span>
+                    <ChevronRight className="ml-2 w-4 h-4" />
+                  </div>
                 </div>
               </div>
             ))}
@@ -201,8 +208,8 @@ const SalesConnect = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=entropy" 
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=entropy"
                 alt="Analytics Dashboard"
                 className="rounded-2xl shadow-xl w-full"
               />
@@ -213,7 +220,7 @@ const SalesConnect = () => {
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
                 Powerful Analytics & Reporting
@@ -246,8 +253,7 @@ const SalesConnect = () => {
 
       {/* FAQ Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
+         <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Frequently Asked Questions
             </h2>
@@ -255,6 +261,16 @@ const SalesConnect = () => {
               Get answers to common questions about Sales Connect
             </p>
           </div>
+        <div className='flex'>
+        <div className="">
+          <img
+            src={fq}
+            alt="FAQs Background"
+            className="w-96 h-96 object-contain rounded-xl mr-12 hidden lg:block"
+          />
+        </div>
+        <div className="max-w-4xl mx-auto">
+         
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
@@ -278,9 +294,8 @@ const SalesConnect = () => {
                   </div>
                 </button>
                 <div
-                  className={`transition-all duration-300 overflow-hidden ${
-                    openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+                  className={`transition-all duration-300 overflow-hidden ${openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    }`}
                 >
                   <div className="px-6 pb-4 text-gray-600 leading-relaxed">
                     {faq.answer}
@@ -290,14 +305,15 @@ const SalesConnect = () => {
             ))}
           </div>
         </div>
+        </div>
       </section>
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <img 
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=300&fit=crop&crop=entropy" 
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=400&h=300&fit=crop&crop=entropy"
               alt="Team collaboration"
               className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white shadow-lg"
             />

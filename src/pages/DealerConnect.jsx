@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Users, Package, TrendingUp, MessageSquare, Award, MapPin, BarChart3, Zap, Target, Shield, ArrowRight, CheckCircle, Star, Eye, Clock, ChevronDown, ChevronUp, Network } from 'lucide-react';
-
+import fq from '../assets/faqs.jpg';
 const DealerConnect = () => {
   const [animatedElements, setAnimatedElements] = useState({});
   const [currentStat, setCurrentStat] = useState(0);
@@ -139,7 +139,7 @@ const DealerConnect = () => {
               for Success
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-              In today's competitive market, an efficient dealer and distributor network is vital for sustained growth and market leadership. 
+              In today's competitive market, an efficient dealer and distributor network is vital for sustained growth and market leadership.
               Our platform helps businesses manage this network by streamlining operations and boosting performance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -158,9 +158,8 @@ const DealerConnect = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${
-                  currentStat === index ? 'ring-4 ring-blue-200 scale-105' : ''
-                }`}
+                className={`bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${currentStat === index ? 'ring-4 ring-blue-200 scale-105' : ''
+                  }`}
                 onMouseEnter={() => handleElementHover(`stat-${index}`)}
               >
                 <div className={`${stat.color} mb-4 flex justify-center ${animatedElements[`stat-${index}`] ? 'animate-bounce' : ''}`}>
@@ -174,7 +173,7 @@ const DealerConnect = () => {
 
           {/* Hero Image */}
           <div className="relative">
-            <img 
+            <img
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop&crop=entropy"
               alt="Dealer Network Management"
               className="w-full rounded-3xl shadow-2xl"
@@ -199,7 +198,7 @@ const DealerConnect = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-semibold text-gray-900 mb-6">
-             Smart Solution for Dealer Management
+              Smart Solution for Dealer Management
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Transform your distribution strategy with our comprehensive dealer management platform
@@ -231,7 +230,7 @@ const DealerConnect = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Order | Inventory | Sales & Revenue Tracking
+              Work Flow Tracking
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Everything you need to manage, analyze, and optimize your dealer network
@@ -242,35 +241,50 @@ const DealerConnect = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 group"
+                className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 group border border-gray-100"
                 onMouseEnter={() => handleElementHover(`feature-${index}`)}
               >
-                <div className="relative">
-                  <img 
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className={`absolute top-4 left-4 w-12 h-12 bg-gradient-to-r ${feature.gradient} rounded-2xl flex items-center justify-center ${animatedElements[`feature-${index}`] ? 'animate-spin' : ''}`}>
-                    <div className="text-white">
-                      {feature.icon}
+                {/* Large Icon Header */}
+                <div className="text-center mb-8">
+                  <div className={`w-20 h-20 bg-gradient-to-r ${feature.gradient} rounded-3xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-all duration-300 shadow-lg ${animatedElements[`feature-${index}`] ? 'animate-pulse' : ''}`}>
+                    <div className="text-white transform group-hover:rotate-12 transition-transform duration-300">
+                      {React.cloneElement(feature.icon, { className: 'w-10 h-10' })}
                     </div>
                   </div>
+
+                  {/* Decorative Elements */}
+                  <div className="flex justify-center space-x-2 mb-4">
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${feature.gradient} opacity-60`}></div>
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${feature.gradient} opacity-40`}></div>
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${feature.gradient} opacity-60`}></div>
+                  </div>
                 </div>
-                <div className="p-8">
+
+                <div className="text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed mb-6">
                     {feature.description}
                   </p>
-                  <div className="space-y-2">
+
+                  {/* Benefits with Icons */}
+                  <div className="space-y-3">
                     {feature.benefits.map((benefit, idx) => (
-                      <div key={idx} className="flex items-center space-x-2">
-                        <CheckCircle className="w-4 h-4 text-green-500" />
-                        <span className="text-sm text-gray-600">{benefit}</span>
+                      <div key={idx} className="flex items-center justify-center space-x-2 group-hover:translate-x-1 transition-transform duration-300">
+                        <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                          <CheckCircle className="w-4 h-4 text-green-600" />
+                        </div>
+                        <span className="text-sm text-gray-700 font-medium">{benefit}</span>
                       </div>
                     ))}
+                  </div>
+
+                  {/* Action Button */}
+                  <div className="mt-8">
+                    <button className={`px-6 py-2 bg-gradient-to-r ${feature.gradient} text-white rounded-full text-sm font-semibold opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 transition-all duration-300 shadow-lg hover:shadow-xl`}>
+                      Learn More
+                    </button>
                   </div>
                 </div>
               </div>
@@ -337,48 +351,57 @@ const DealerConnect = () => {
 
       {/* FAQ Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Everything you need to know about Dealer Connect
-            </p>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-xl text-gray-600">
+            Everything you need to know about Dealer Connect
+          </p>
+        </div>
+        <div className='flex'>
+          <div className="">
+            <img
+              src={fq}
+              alt="FAQs Background"
+              className="w-96 h-96 object-contain rounded-xl mr-12 hidden lg:block"
+            />
           </div>
+          <div className="max-w-4xl mx-auto">
 
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
-              >
-                <button
-                  className="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
-                  onClick={() => toggleFaq(index)}
-                >
-                  <span className="font-semibold text-gray-900 pr-4 text-lg">
-                    {faq.question}
-                  </span>
-                  <div className="flex-shrink-0">
-                    {openFaq === index ? (
-                      <ChevronUp className="w-6 h-6 text-blue-600" />
-                    ) : (
-                      <ChevronDown className="w-6 h-6 text-gray-400" />
-                    )}
-                  </div>
-                </button>
+
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
                 <div
-                  className={`transition-all duration-500 overflow-hidden ${
-                    openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+                  key={index}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="px-6 pb-6 text-gray-600 leading-relaxed text-lg">
-                    {faq.answer}
+                  <button
+                    className="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onClick={() => toggleFaq(index)}
+                  >
+                    <span className="font-semibold text-gray-900 pr-4 text-lg">
+                      {faq.question}
+                    </span>
+                    <div className="flex-shrink-0">
+                      {openFaq === index ? (
+                        <ChevronUp className="w-6 h-6 text-blue-600" />
+                      ) : (
+                        <ChevronDown className="w-6 h-6 text-gray-400" />
+                      )}
+                    </div>
+                  </button>
+                  <div
+                    className={`transition-all duration-500 overflow-hidden ${openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                  >
+                    <div className="px-6 pb-6 text-gray-600 leading-relaxed text-lg">
+                      {faq.answer}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -387,7 +410,7 @@ const DealerConnect = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <img 
+            <img
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=200&h=200&fit=crop&crop=faces"
               alt="Business team"
               className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white shadow-2xl"
@@ -397,7 +420,7 @@ const DealerConnect = () => {
             Ready to Transform Your Network?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join leading businesses who have revolutionized their dealer networks with our comprehensive platform. 
+            Join leading businesses who have revolutionized their dealer networks with our comprehensive platform.
             Start building your path to market leadership today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

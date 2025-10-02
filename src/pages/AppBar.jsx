@@ -19,7 +19,7 @@ const AppBar = () => {
               <img src={logo} alt="Probiz Logo" width={200} height={100} />
 
               {/* Desktop Navigation - Fixed with explicit display classes */}
-              <div className="hidden md:flex md:items-center md:space-x-6 absolute left-1/2 transform -translate-x-1/2">
+              <div className="hidden md:flex md:items-center md:space-x-4 absolute left-1/2 transform -translate-x-1/2">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>

@@ -209,13 +209,13 @@ const About = () => {
                                 name: "Siraj S",
                                 role: "CEO",
                                 img: profile1, // ✅ import individual images
-                                linkedin: "https://linkedin.com/in/siraj-profile",
+                                linkedin: "https://www.linkedin.com/in/siraj-s-7aa58018/",
                             },
                             {
                                 name: "Hanish",
                                 role: "CTO",
                                 img: profile2, // ✅ another imported image
-                                linkedin: "https://linkedin.com/in/hanish-profile",
+                                linkedin: "https://www.linkedin.com/in/hanishkeloth/",
                             },
                         ].map((member, index) => (
                             <div

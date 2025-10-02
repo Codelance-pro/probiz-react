@@ -39,6 +39,7 @@ import company1 from "@/assets/company1.jpeg";
 import company2 from "@/assets/company2.jpeg";
 import company3 from "@/assets/company3.jpeg";
 import company4 from "@/assets/company4.jpeg";
+import home from "@/assets/home.png";
 
 export function ApplexLanding() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -172,7 +173,7 @@ export function ApplexLanding() {
       <section className="px-4 sm:px-6 py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-slide-up">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6 mt-10">Product Features</h2>
+            <h2 className="text-2xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-4 sm:mb-6 leading-tight px-2">Product Features</h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Discover Probiz's Connect advanced features to streamline workflow, enhance
               collaboration, and boost productivity.
@@ -186,7 +187,7 @@ export function ApplexLanding() {
                 <FeatureCard
                   icon={RefreshCw}
                   title="Sales Connect"
-                  description="Applex seamlessly synchronizes and advanced technology to craft exceptional digital experiences."
+                  description="We recognise the challenges brands face in managing sales and distribution. "
                   className="animate-fade-in"
                 />
               </Link>
@@ -195,7 +196,7 @@ export function ApplexLanding() {
                 <FeatureCard
                   icon={Settings}
                   title="Dealer Connect"
-                  description="Effortlessly organize tasks, projects, and ideas to boost efficiency and stay on track."
+                  description="In today's competitive market, an efficient dealer and distributor network is vital for sustained growth and market leadership. "
                   className="animate-fade-in"
                 />
               </Link>
@@ -207,7 +208,7 @@ export function ApplexLanding() {
                 <FeatureCard
                   icon={Globe}
                   title="Employee Connect"
-                  description="Applex creativity, innovation, and advanced technology to craft exceptional digital experiences."
+                  description="In the fast-paced world of sales, your employees are the frontline representatives of your brand."
                   className="animate-fade-in"
                 />
               </Link>
@@ -216,7 +217,7 @@ export function ApplexLanding() {
                 <FeatureCard
                   icon={Zap}
                   title="Partner Connect"
-                  description="Experience blazing fast performance with optimized workflows and instant responses."
+                  description="Rewarding loyalty programs that motivate partners to stay engaged and invested."
                   className="animate-fade-in"
                 />
               </Link>
@@ -226,8 +227,8 @@ export function ApplexLanding() {
               <Link to="/features/integrations" className="animate-fade-in">
                 <FeatureCard
                   icon={Globe}
-                  title="Itegrations"
-                  description="Applex creativity, innovation, and advanced technology to craft exceptional digital experiences."
+                  title="Integrations"
+                  description="It simplifies financial transactions with seamless payment gateway integration."
                   className="animate-fade-in"
                 />
               </Link>
@@ -240,7 +241,7 @@ export function ApplexLanding() {
       <section className="bg-gradient-to-b from-[#dbeafe] via-[#eef2ff] to-[#fff1f2] py-12 sm:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 sm:mb-6">
-            Supercharge with your <span className="bg-gradient-primary bg-clip-text text-transparent">Sale and Distribution with AI Today</span>
+            Supercharge your <span className="bg-gradient-primary bg-clip-text text-transparent">Sale and Distribution with AI Today</span>
           </h1>
 
           {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
@@ -304,9 +305,9 @@ export function ApplexLanding() {
             </div>
             <div className="flex justify-center animate-bounce-in order-1 lg:order-2">
               <img
-                src={calendarMockup}
+                src={home}
                 alt="Applex calendar interface"
-                className="w-60 sm:w-72 lg:w-80 h-auto rounded-2xl sm:rounded-3xl shadow-floating"
+                className="w-full max-w-md  rounded-2xl sm:rounded-3xl shadow-floating"
               />
             </div>
           </div>

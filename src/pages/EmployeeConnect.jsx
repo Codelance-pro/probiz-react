@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Users, MapPin, Smartphone, BarChart3, Clock, Target, Zap, Shield, ArrowRight, CheckCircle, Navigation, UserCheck, TrendingUp, MessageSquare, Award, Globe, ChevronDown, ChevronUp, Briefcase, Route, Database, Headphones } from 'lucide-react';
-
+import fq from '../assets/faqs.jpg';
 const EmployeeConnect = () => {
   const [currentFeature, setCurrentFeature] = useState(0);
   const [animatedCards, setAnimatedCards] = useState({});
@@ -139,8 +139,8 @@ const EmployeeConnect = () => {
               to Excel
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-              In the fast-paced world of sales, your employees are the frontline representatives of your brand. 
-              We recognize the critical role they play in driving revenue and building lasting customer relationships. 
+              In the fast-paced world of sales, your employees are the frontline representatives of your brand.
+              We recognize the critical role they play in driving revenue and building lasting customer relationships.
               Equip your team with the tools and technology they need to excel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -159,9 +159,8 @@ const EmployeeConnect = () => {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${
-                  currentFeature % 4 === index ? 'ring-4 ring-indigo-200 scale-105' : ''
-                }`}
+                className={`bg-white rounded-2xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 ${currentFeature % 4 === index ? 'ring-4 ring-indigo-200 scale-105' : ''
+                  }`}
                 onMouseEnter={() => handleCardHover(`stat-${index}`)}
               >
                 <div className={`${stat.color} mb-4 flex justify-center ${animatedCards[`stat-${index}`] ? 'animate-bounce' : ''}`}>
@@ -175,7 +174,7 @@ const EmployeeConnect = () => {
 
           {/* Hero Image */}
           <div className="relative">
-            <img 
+            <img
               src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=500&fit=crop&crop=entropy"
               alt="Field Sales Team"
               className="w-full rounded-3xl shadow-2xl"
@@ -253,7 +252,7 @@ const EmployeeConnect = () => {
                       {React.cloneElement(feature.icon, { className: 'w-10 h-10' })}
                     </div>
                   </div>
-                  
+
                   {/* Decorative Elements */}
                   <div className="flex justify-center space-x-2 mb-4">
                     <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${feature.gradient} opacity-60`}></div>
@@ -269,7 +268,7 @@ const EmployeeConnect = () => {
                   <p className="text-gray-600 leading-relaxed mb-6">
                     {feature.description}
                   </p>
-                  
+
                   {/* Benefits with Icons */}
                   <div className="space-y-3">
                     {feature.benefits.map((benefit, idx) => (
@@ -304,8 +303,8 @@ const EmployeeConnect = () => {
                 Intelligent Route Optimization
               </h2>
               <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-                Equipped with intelligent route optimization and navigation features, field sales employees can 
-                plan their sales routes efficiently, saving time and fuel costs. Your sales team can access 
+                Equipped with intelligent route optimization and navigation features, field sales employees can
+                plan their sales routes efficiently, saving time and fuel costs. Your sales team can access
                 crucial customer information on the go.
               </p>
               <div className="space-y-6">
@@ -327,9 +326,9 @@ const EmployeeConnect = () => {
                 ))}
               </div>
             </div>
-            
+
             <div className="relative">
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=600&h=400&fit=crop&crop=entropy"
                 alt="Route Optimization Dashboard"
                 className="rounded-3xl shadow-2xl w-full"
@@ -353,48 +352,57 @@ const EmployeeConnect = () => {
 
       {/* FAQ Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-xl text-gray-600">
-              Everything you need to know about Employee Connect
-            </p>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-xl text-gray-600">
+            Everything you need to know about Employee Connect
+          </p>
+        </div>
+        <div className='flex'>
+          <div className="">
+            <img
+              src={fq}
+              alt="FAQs Background"
+              className="w-96 h-96 object-contain rounded-xl mr-12 hidden lg:block"
+            />
           </div>
+          <div className="max-w-4xl mx-auto">
 
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
-              >
-                <button
-                  className="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
-                  onClick={() => toggleFaq(index)}
-                >
-                  <span className="font-semibold text-gray-900 pr-4 text-lg">
-                    {faq.question}
-                  </span>
-                  <div className="flex-shrink-0">
-                    {openFaq === index ? (
-                      <ChevronUp className="w-6 h-6 text-indigo-600" />
-                    ) : (
-                      <ChevronDown className="w-6 h-6 text-gray-400" />
-                    )}
-                  </div>
-                </button>
+
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
                 <div
-                  className={`transition-all duration-500 overflow-hidden ${
-                    openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                  }`}
+                  key={index}
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
                 >
-                  <div className="px-6 pb-6 text-gray-600 leading-relaxed text-lg">
-                    {faq.answer}
+                  <button
+                    className="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                    onClick={() => toggleFaq(index)}
+                  >
+                    <span className="font-semibold text-gray-900 pr-4 text-lg">
+                      {faq.question}
+                    </span>
+                    <div className="flex-shrink-0">
+                      {openFaq === index ? (
+                        <ChevronUp className="w-6 h-6 text-indigo-600" />
+                      ) : (
+                        <ChevronDown className="w-6 h-6 text-gray-400" />
+                      )}
+                    </div>
+                  </button>
+                  <div
+                    className={`transition-all duration-500 overflow-hidden ${openFaq === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                      }`}
+                  >
+                    <div className="px-6 pb-6 text-gray-600 leading-relaxed text-lg">
+                      {faq.answer}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -403,7 +411,7 @@ const EmployeeConnect = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <img 
+            <img
               src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop&crop=faces"
               alt="Sales team"
               className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white shadow-2xl"
@@ -413,7 +421,7 @@ const EmployeeConnect = () => {
             Ready to Empower Your Sales Force?
           </h2>
           <p className="text-xl text-indigo-100 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join forward-thinking companies who have transformed their field sales operations with our 
+            Join forward-thinking companies who have transformed their field sales operations with our
             comprehensive employee empowerment platform. Drive revenue growth today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
