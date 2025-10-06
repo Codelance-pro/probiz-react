@@ -4,7 +4,7 @@ import fq from '../assets/faqs.jpg';
 
 const SalesConnect = () => {
   const [openFaq, setOpenFaq] = useState(null);
-
+  const names = "surya"
   const features = [
     {
       icon: <Package className="w-8 h-8" />,
