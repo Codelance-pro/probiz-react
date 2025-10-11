@@ -92,9 +92,9 @@ export function ApplexLanding() {
             <div className="relative flex justify-center animate-bounce-in -mb-20 sm:-mb-32 lg:-mb-40">
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                 <img
-                  src={heroMockup}
+                  src={dashboard}
                   alt="ProbizConnect mobile app interface"
-                  className="w-full h-auto rounded-2xl sm:rounded-3xl mb-40"
+                  className="w-full h-auto rounded-2xl shadow-2xl sm:rounded-3xl mb-40"
                 />
 
                 {/* Floating Feature Cards - Hidden on mobile, visible on larger screens */}

@@ -38,27 +38,7 @@ const AppBar = () => {
                   About
                 </NavLink>
 
-              
-
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    `${baseClasses} ${isActive ? "text-purple-400 font-semibold" : "hover:text-foreground"}`
-                  }
-                >
-                  Contact
-                </NavLink>
-
-                <NavLink
-                  to="/blogs"
-                  className={({ isActive }) =>
-                    `${baseClasses} ${isActive ? "text-purple-400 font-semibold" : "hover:text-foreground"}`
-                  }
-                >
-                  Blogs
-                </NavLink>
-
-                  {/* ✅ Solutions with Dropdown */}
+               {/* ✅ Solutions with Dropdown */}
                 <div className="relative group">
                   <button className={`${baseClasses} hover:text-foreground flex items-center gap-1`}>
                     Solutions
@@ -106,6 +86,28 @@ const AppBar = () => {
                     </NavLink>
                   </div>
                 </div>
+
+                  <NavLink
+                  to="/blogs"
+                  className={({ isActive }) =>
+                    `${baseClasses} ${isActive ? "text-purple-400 font-semibold" : "hover:text-foreground"}`
+                  }
+                >
+                  Blogs
+                </NavLink>
+
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `${baseClasses} ${isActive ? "text-purple-400 font-semibold" : "hover:text-foreground"}`
+                  }
+                >
+                  Contact
+                </NavLink>
+
+              
+
+                 
               </div>
 
             </div>
@@ -214,6 +216,19 @@ const AppBar = () => {
               )}
             </div>
 
+                 <NavLink
+              to="/blogs"
+              className={({ isActive }) =>
+                `${baseClasses} ${
+                  isActive
+                    ? "text-purple-400 font-semibold"
+                    : "hover:text-foreground"
+                }`
+              }
+            >
+              Blogs
+            </NavLink>
+
             <NavLink
               to="/contact"
               className={({ isActive }) =>
@@ -227,18 +242,7 @@ const AppBar = () => {
               Contact
             </NavLink>
 
-            <NavLink
-              to="/blogs"
-              className={({ isActive }) =>
-                `${baseClasses} ${
-                  isActive
-                    ? "text-purple-400 font-semibold"
-                    : "hover:text-foreground"
-                }`
-              }
-            >
-              Blogs
-            </NavLink>
+       
 
             <Button className="bg-foreground text-background hover:bg-foreground/90 rounded-full w-full flex items-center justify-center">
               Book a Demo
