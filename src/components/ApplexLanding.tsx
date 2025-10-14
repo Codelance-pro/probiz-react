@@ -30,15 +30,25 @@ import calendarMockup from "@/assets/calendar-mockup.jpg";
 import customerTestimonial from "@/assets/customer-testimonial.jpg";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import frame1 from "@/assets/frame 43.png";
+import frame1 from "@/assets/frame 2.png";
 import frame2 from "@/assets/frame 44.png";
-import frame3 from "@/assets/frame 40.png";
+import frame3 from "@/assets/frame 3.png";
+import frame4 from "@/assets/frame 1.png";
 import frame5 from "@/assets/frame 54.png";
 import dashboard from "@/assets/dashboard.png";
-import company1 from "@/assets/company1.jpeg";
-import company2 from "@/assets/company2.jpeg";
-import company3 from "@/assets/company3.jpeg";
-import company4 from "@/assets/company4.jpeg";
+import company1 from "@/assets/tally.png";
+import company2 from "@/assets/zoho.png";
+import company3 from "@/assets/amazon.svg";
+import company4 from "@/assets/freshworks.svg";
+import company5 from "@/assets/justdial.svg";
+import company6 from "@/assets/greytur.png";
+import company7 from "@/assets/razorpay.svg";
+import company8 from "@/assets/indiamart.png";
+import company9 from "@/assets/keka.svg";
+import company10 from "@/assets/quickbook.svg";
+import company11 from "@/assets/sap.svg";
+import company12 from "@/assets/WhatsApp.svg";
+import company13 from "@/assets/paytm.png";
 import home from "@/assets/home.png";
 
 export function ApplexLanding() {
@@ -73,10 +83,10 @@ export function ApplexLanding() {
               </p>
               <h1 className="text-2xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl font-bold text-foreground mb-4 sm:mb-6 leading-tight px-2"> Carefully Crafted for SME's in India</h1>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 lg:mb-16 px-4">
-                <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
-                  {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
+                {/* <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
+                  <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" />
                   Try for Free
-                </Button>
+                </Button> */}
                 <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
                   {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
                   Book a Demo
@@ -98,7 +108,7 @@ export function ApplexLanding() {
                 />
 
                 {/* Floating Feature Cards - Hidden on mobile, visible on larger screens */}
-                <div className="hidden lg:block absolute -left-60 xl:-left-34 top-20 w-full xl:w-60 lg:w-60 transform -rotate-[10deg]">
+                <div className="hidden lg:block absolute -left-48 xl:-left-26 top-0 w-full xl:w-60 lg:w-60 transform -rotate-[10deg]">
                   {/* <div className="flex items-center space-x-2 xl:space-x-3">
                     <div className="w-6 xl:w-8 h-6 xl:h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
                       <MessageCircle className="w-3 xl:w-4 h-3 xl:h-4 text-primary-foreground" />
@@ -108,7 +118,7 @@ export function ApplexLanding() {
                       <p className="text-xs text-muted-foreground">Team discussions</p>
                     </div>
                   </div> */}
-                  <img src={frame1} alt="ProbizConnect Logo" className="w-full h-full xl:w-full xl:h-full mb-2 " />
+                  <img src={frame1} alt="ProbizConnect Logo" className="w-80 h-80 xl:w-48 xl:h-48 mb-2 " />
                 </div>
 
                 <div className="hidden lg:block absolute -left-48 xl:-left-34 top-40 w-full xl:w-60 lg:w-60 transform -rotate-[10deg]">
@@ -121,12 +131,12 @@ export function ApplexLanding() {
                       <p className="text-xs text-muted-foreground">Team discussions</p>
                     </div>
                   </div> */}
-                  <img src={frame2} alt="ProbizConnect Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" />
+                  {/* <img src={frame2} alt="ProbizConnect Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" /> */}
                 </div>
 
 
 
-                <div className="hidden lg:block absolute -right-24 xl:-right-48 top-5 w-40 xl:w-48 transform -rotate-[-10deg]">
+                <div className="hidden lg:block absolute -right-24 xl:-right-48 top-10 w-40 xl:w-48 transform -rotate-[-10deg]">
                   {/* <div className="flex items-center space-x-2 xl:space-x-3">
                     <div className="w-6 xl:w-8 h-6 xl:h-8 bg-accent rounded-lg flex items-center justify-center">
                       <Users className="w-3 xl:w-4 h-3 xl:h-4 text-primary-foreground" />
@@ -136,7 +146,7 @@ export function ApplexLanding() {
                       <p className="text-xs text-muted-foreground">Real-time collaboration</p>
                     </div>
                   </div> */}
-                  <img src={frame3} alt="ProbizConnect Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" />
+                  <img src={frame3} alt="ProbizConnect Logo" className="w-full h-full xl:w-full xl:h-full mb-2" />
                 </div>
 
                 <div className="hidden lg:block absolute -left-28 bottom-32 xl:-left-48 bottom-20 w-44 xl:w-52 transform -rotate-[10deg]">
@@ -150,7 +160,7 @@ export function ApplexLanding() {
                     </div>
                   </div> */}
 
-                  <img src={frame3} alt="Probiz Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" />
+                  <img src={frame4} alt="Probiz Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" />
                 </div>
 
                 <div className="hidden lg:block absolute -right-28 xl:-right-48 bottom-32 w-44 xl:w-52 transform -rotate-[-10deg]">
@@ -368,66 +378,75 @@ export function ApplexLanding() {
             </div>
 
             {/* Row 2 - 6 items */}
-            {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 justify-items-center">
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-2xl font-bold text-orange-500">aws</div>
                   <div className="text-orange-400 text-xs">amazon web services</div>
-                </div>
+                </div> */}
+                <img src={company5} alt="Justdial Logo" className="w-full h-24 object-contain" />
               </div>
               
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">SAP</div>
-                </div>
+                </div> */}
+                <img src={company6} alt="greythur" className="w-full h-24 object-contain" />
               </div>
               
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-2xl font-bold text-cyan-500">NAVISION</div>
-                </div>
+                </div> */}
+                <img src={company7} alt="Razorpay" className="w-full h-24 object-contain" />
               </div>
               
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-xl font-bold text-gray-600">greytHR</div>
-                </div>
+                </div> */}
+                <img src={company8} alt="indiamart" className="w-full h-24 object-contain" />
               </div>
               
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-xl font-bold text-green-600">● HRone</div>
-                </div>
+                </div> */}
+                <img src={company9} alt="keka" className="w-full h-24 object-contain" />
               </div>
 
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="w-8 h-8 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 to-blue-500 rounded-full mx-auto mb-2"></div>
                   <div className="text-sm font-bold text-gray-700">Google Cloud</div>
-                </div>
+                </div> */}
+                <img src={company10} alt="quickbooks" className="w-full h-24 object-contain" />
               </div>
-            </div> */}
+            </div>
 
             {/* Row 3 - 5 items */}
-            {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-2xl text-green-500">📱</div>
                   <div className="text-sm font-bold text-gray-700">WhatsApp</div>
-                </div>
+                </div> */}
+                 <img src={company11} alt="SAP" className="w-full h-24 object-contain" />
               </div>
               
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-xl font-bold text-green-600">QuickBooks</div>
-                </div>
+                </div> */}
+                 <img src={company12} alt="Whatsapp" className="w-full h-24 object-contain" />
               </div>
               
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-xl font-bold text-gray-700">keka</div>
                   <div className="text-blue-500">|||</div>
-                </div>
+                </div> */}
+                 <img src={company13} alt="PayTm" className="w-full h-24 object-contain" />
               </div>
               
               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
@@ -442,7 +461,7 @@ export function ApplexLanding() {
                   <div className="text-blue-400">●</div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
 
           {/* CTA Button */}

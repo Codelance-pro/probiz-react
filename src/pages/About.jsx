@@ -192,7 +192,7 @@ const About = () => {
             </section>
 
             {/* Meet The Team - Floating Cards */}
-            <section className="py-20 bg-gradient-to-b from-purple-50 to-white">
+            {/* <section className="py-20 bg-gradient-to-b from-purple-50 to-white">
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -208,13 +208,13 @@ const About = () => {
                             {
                                 name: "Siraj S",
                                 role: "CEO",
-                                img: profile1, // ✅ import individual images
+                                img: profile1,
                                 linkedin: "https://www.linkedin.com/in/siraj-s-7aa58018/",
                             },
                             {
                                 name: "Hanish",
                                 role: "CTO",
-                                img: profile2, // ✅ another imported image
+                                img: profile2, 
                                 linkedin: "https://www.linkedin.com/in/hanishkeloth/",
                             },
                         ].map((member, index) => (
@@ -229,11 +229,11 @@ const About = () => {
                                 style={{ transitionDelay: `${index * 300}ms` }}
                             >
                                 <Card className="p-8 rounded-3xl border-0 shadow-xl hover:shadow-2xl transition-all duration-500 group hover:-translate-y-4 bg-white relative overflow-hidden">
-                                    {/* Background Pattern */}
+                                    
                                     <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-purple-100 to-transparent rounded-bl-full opacity-50"></div>
 
                                     <div className="relative text-center">
-                                        {/* Avatar with Animation */}
+                                      
                                         <div className="relative mb-6 group-hover:scale-105 transition-transform duration-500">
                                             <div className="w-32 h-32 rounded-full mx-auto flex items-center justify-center shadow-lg overflow-hidden">
                                                 <img
@@ -266,7 +266,7 @@ const About = () => {
                         ))}
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             {/* Call to Action - Full Width Banner */}
