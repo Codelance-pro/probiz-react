@@ -36,6 +36,7 @@ import frame3 from "@/assets/frame 3.png";
 import frame4 from "@/assets/frame 1.png";
 import frame5 from "@/assets/frame 54.png";
 import dashboard from "@/assets/dashboard.png";
+import frame from "@/assets/dashboard-1.jpeg";
 import company1 from "@/assets/tally.png";
 import company2 from "@/assets/zoho.png";
 import company3 from "@/assets/amazon.svg";
@@ -102,77 +103,13 @@ export function ApplexLanding() {
             <div className="relative flex justify-center animate-bounce-in -mb-20 sm:-mb-32 lg:-mb-40">
               <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                 <img
-                  src={dashboard}
+                  src={frame}
                   alt="ProbizConnect mobile app interface"
                   className="w-full h-auto rounded-2xl shadow-2xl sm:rounded-3xl mb-40"
                 />
 
                 {/* Floating Feature Cards - Hidden on mobile, visible on larger screens */}
-                <div className="hidden lg:block absolute -left-48 xl:-left-26 top-0 w-full xl:w-60 lg:w-60 transform -rotate-[10deg]">
-                  {/* <div className="flex items-center space-x-2 xl:space-x-3">
-                    <div className="w-6 xl:w-8 h-6 xl:h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                      <MessageCircle className="w-3 xl:w-4 h-3 xl:h-4 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-xs xl:text-sm">Quick Chat</p>
-                      <p className="text-xs text-muted-foreground">Team discussions</p>
-                    </div>
-                  </div> */}
-                  <img src={frame1} alt="ProbizConnect Logo" className="w-80 h-80 xl:w-48 xl:h-48 mb-2 " />
-                </div>
-
-                <div className="hidden lg:block absolute -left-48 xl:-left-34 top-40 w-full xl:w-60 lg:w-60 transform -rotate-[10deg]">
-                  {/* <div className="flex items-center space-x-2 xl:space-x-3">
-                    <div className="w-6 xl:w-8 h-6 xl:h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                      <MessageCircle className="w-3 xl:w-4 h-3 xl:h-4 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-xs xl:text-sm">Quick Chat</p>
-                      <p className="text-xs text-muted-foreground">Team discussions</p>
-                    </div>
-                  </div> */}
-                  {/* <img src={frame2} alt="ProbizConnect Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" /> */}
-                </div>
-
-
-
-                <div className="hidden lg:block absolute -right-24 xl:-right-48 top-10 w-40 xl:w-48 transform -rotate-[-10deg]">
-                  {/* <div className="flex items-center space-x-2 xl:space-x-3">
-                    <div className="w-6 xl:w-8 h-6 xl:h-8 bg-accent rounded-lg flex items-center justify-center">
-                      <Users className="w-3 xl:w-4 h-3 xl:h-4 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-xs xl:text-sm">Team Sync</p>
-                      <p className="text-xs text-muted-foreground">Real-time collaboration</p>
-                    </div>
-                  </div> */}
-                  <img src={frame3} alt="ProbizConnect Logo" className="w-full h-full xl:w-full xl:h-full mb-2" />
-                </div>
-
-                <div className="hidden lg:block absolute -left-28 bottom-32 xl:-left-48 bottom-20 w-44 xl:w-52 transform -rotate-[10deg]">
-                  {/* <div className="flex items-center space-x-2 xl:space-x-3">
-                    <div className="w-6 xl:w-8 h-6 xl:h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                      <Calendar className="w-3 xl:w-4 h-3 xl:h-4 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-xs xl:text-sm">Smart Scheduling</p>
-                      <p className="text-xs text-muted-foreground">Automatic planning</p>
-                    </div>
-                  </div> */}
-
-                  <img src={frame4} alt="Probiz Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" />
-                </div>
-
-                <div className="hidden lg:block absolute -right-28 xl:-right-48 bottom-32 w-44 xl:w-52 transform -rotate-[-10deg]">
-                  {/* <div className="text-center p-2">
-                    <div className="w-10 xl:w-12 h-10 xl:h-12 bg-accent rounded-full mx-auto mb-2 flex items-center justify-center">
-                      <Star className="w-5 xl:w-6 h-5 xl:h-6 text-primary-foreground" />
-                    </div>
-                    <p className="font-semibold text-xs xl:text-sm">4.9/5 Rating</p>
-                    <p className="text-xs text-muted-foreground">User satisfaction</p>
-                  </div> */}
-                  <img src={frame5} alt="Probiz Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" />
-                </div>
+             
               </div>
             </div>
           </div>
