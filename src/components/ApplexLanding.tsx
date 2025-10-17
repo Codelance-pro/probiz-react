@@ -339,8 +339,8 @@ export function ApplexLanding() {
           {/* Integration Logos Grid */}
           <div className="space-y-8 mb-16">
             {/* Row 1 - 5 items */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-red-600 mb-2">Tally</div>
                   <div className="text-xs text-gray-500">POWER OF SIMPLICITY</div>
@@ -348,14 +348,14 @@ export function ApplexLanding() {
                 <img src={company1} alt="Tally Logo" className="w-full h-24 object-contain" />
               </div>
 
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 via-blue-500 to-purple-500 bg-clip-text text-transparent">Zoho</div>
                 </div> */}
                 <img src={company2} alt="Zoho Logo" className="w-full h-24 object-contain" />
               </div>
 
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-red-600">IndiaMART</div>
                   <div className="text-lg text-red-600">M</div>
@@ -363,7 +363,7 @@ export function ApplexLanding() {
                 <img src={company3} alt="IndiaMART Logo" className="w-full h-24 object-contain" />
               </div>
 
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-orange-500">Justdial</div>
                 </div> */}
@@ -379,8 +379,8 @@ export function ApplexLanding() {
             </div>
 
             {/* Row 2 - 6 items */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 justify-items-center">
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-orange-500">aws</div>
                   <div className="text-orange-400 text-xs">amazon web services</div>
@@ -388,46 +388,40 @@ export function ApplexLanding() {
                 <img src={company5} alt="Justdial Logo" className="w-full h-24 object-contain" />
               </div>
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">SAP</div>
                 </div> */}
                 <img src={company6} alt="greythur" className="w-full h-24 object-contain" />
               </div>
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl font-bold text-cyan-500">NAVISION</div>
                 </div> */}
                 <img src={company7} alt="Razorpay" className="w-full h-24 object-contain" />
               </div>
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-xl font-bold text-gray-600">greytHR</div>
                 </div> */}
                 <img src={company8} alt="indiamart" className="w-full h-24 object-contain" />
               </div>
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-xl font-bold text-green-600">● HRone</div>
                 </div> */}
                 <img src={company9} alt="keka" className="w-full h-24 object-contain" />
               </div>
 
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
-                {/* <div className="text-center">
-                  <div className="w-8 h-8 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 to-blue-500 rounded-full mx-auto mb-2"></div>
-                  <div className="text-sm font-bold text-gray-700">Google Cloud</div>
-                </div> */}
-                <img src={company10} alt="quickbooks" className="w-full h-24 object-contain" />
-              </div>
+             
             </div>
 
             {/* Row 3 - 5 items */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-2xl text-green-500">📱</div>
                   <div className="text-sm font-bold text-gray-700">WhatsApp</div>
@@ -435,33 +429,41 @@ export function ApplexLanding() {
                  <img src={company11} alt="SAP" className="w-full h-24 object-contain" />
               </div>
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-xl font-bold text-green-600">QuickBooks</div>
                 </div> */}
                  <img src={company12} alt="Whatsapp" className="w-full h-24 object-contain" />
               </div>
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 {/* <div className="text-center">
                   <div className="text-xl font-bold text-gray-700">keka</div>
                   <div className="text-blue-500">|||</div>
                 </div> */}
                  <img src={company13} alt="PayTm" className="w-full h-24 object-contain" />
               </div>
+
+               <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
+                {/* <div className="text-center">
+                  <div className="w-8 h-8 bg-gradient-to-r from-red-500 via-yellow-500 via-green-500 to-blue-500 rounded-full mx-auto mb-2"></div>
+                  <div className="text-sm font-bold text-gray-700">Google Cloud</div>
+                </div> */}
+                <img src={company10} alt="quickbooks" className="w-full h-24 object-contain" />
+              </div>
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              {/* <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 <div className="text-center">
                   <div className="text-xl font-bold text-blue-500">Razorpay</div>
                 </div>
-              </div>
+              </div> */}
               
-              <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full max-w-48">
+              {/* <div className="flex items-center justify-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-40 h-24 max-w-48">
                 <div className="text-center">
                   <div className="text-xl font-bold text-blue-400">freshservice</div>
                   <div className="text-blue-400">●</div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
