@@ -593,7 +593,7 @@ export function ApplexLanding() {
             <p>&copy; 2023 ProbizConnect. All rights reserved.</p>
           </div>
         </div>
-      </footer>
+      </footer>   
     </div>
   );
 }
