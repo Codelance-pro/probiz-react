@@ -30,13 +30,13 @@ import calendarMockup from "@/assets/calendar-mockup.jpg";
 import customerTestimonial from "@/assets/customer-testimonial.jpg";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import frame1 from "@/assets/side1.png";
+import frame1 from "@/assets/si2.webp";
 import frame2 from "@/assets/frame 44.png";
-import frame3 from "@/assets/side2.png";
-import frame4 from "@/assets/frame 1.png";
-import frame5 from "@/assets/side3.png";
-import dashboard from "@/assets/dashboard.png";
-import frame from "@/assets/dashboard-1.jpeg";
+import frame3 from "@/assets/si3.png";
+import frame4 from "@/assets/si1.webp";
+import frame5 from "@/assets/star2.png";
+import dashboard from "@/assets/fr1.png";
+import frame from "@/assets/dashboard-1.png";
 import company1 from "@/assets/tally.png";
 import company2 from "@/assets/zoho.png";
 import company3 from "@/assets/amazon.svg";
@@ -161,7 +161,7 @@ export function ApplexLanding() {
                     </div>
                   </div> */}
 
-                  {/* <img src={frame4} alt="Probiz Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" /> */}
+                  <img src={frame4} alt="Probiz Logo" className="w-full h-full xl:w-full xl:h-fullmb-2" /> 
                 </div>
 
                 <div className="hidden lg:block absolute -right-28 xl:-right-68 bottom-32 w-44 xl:w-52 transform -rotate-[-10deg]">
@@ -300,10 +300,10 @@ export function ApplexLanding() {
                 Establish a brand loyalty program for your partners to strengthen your market presence.<br></br>
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
-                  {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
+                {/* <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
+                  {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> }
                   Try for free
-                </Button>
+                </Button> */ }
                 <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg flex items-center justify-center">
                   {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
                   Book a Demo
@@ -337,6 +337,7 @@ export function ApplexLanding() {
           </p>
 
           {/* Integration Logos Grid */}
+{/* Integration Logos Grid */}
           <div className="space-y-8 mb-16">
             {/* Row 1 - 5 items */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  justify-items-center">
@@ -578,10 +579,10 @@ export function ApplexLanding() {
             <h2 className="text-xl sm:text-2xl font-bold text-white text-foreground mb-3 sm:mb-4">Ready to get started?</h2>
             <p className="text-sm sm:text-base text-muted-foreground text-white mb-4 sm:mb-6 px-4">Join thousands of teams already using  ProbizConnect to boost their productivity.</p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-              <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg  ">
-                {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
+              {/*<Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg  ">
+                <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> 
                 Try for Free
-              </Button>
+              </Button>*/}
               <Button size="lg" className="bg-[#00143e] hover:opacity-90 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg ">
                 {/* <Download className="w-4 sm:w-5 h-4 sm:h-5 mr-2" /> */}
                 Book a Demo
